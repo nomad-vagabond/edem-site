@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <title>EDEM</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <!-- <link href="css/main.min.css" rel="stylesheet"> -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet"> -->
+    <!-- <script src="http://vjs.zencdn.net/c/video.js"></script> -->
+    <script type="text/javascript" src="js/stars.js"></script>
+    
+    <!-- // document.getElementById("jupiter-live").currentTime = 30 -->
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <!-- <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap -->
+                    EDEM
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+<!--                     <li>
+                        <a class="page-scroll" href="#intro">Intro</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#surface">Intro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#ice">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#underice">Flight scheme</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#ocean">Spacecraft</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#bottom">UUV</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+<!--                 <video width="400" height="400" autoplay>
+
+                    <source src="img/J3.mp4" type="video/mp4">
+                </video> -->
+
+    <!-- Intro Header -->
+    <!-- <div class="galaxy"> -->
+    <div>
+    <!-- <img id="galaxy-core" src="img/galactic_core5.png"> -->
+        <canvas id="space-canvas"></canvas>
+    </div>
+    <header class="intro">
+
+        <div class="intro-body">
+
+            <div class="container">
+
+                <div class="row">
+                    <!-- <div class="col-md-8 col-md-offset-2" style="border: solid red 1px;"> -->
+                    <!-- <div class="col-md-12"> style="border: solid red 1px;" -->
+                    <div class="ccc">
+                        <h1 class="brand-heading">EUROPA DIRECT<br>ENCOUNTER MISSION</h1>
+                        <!-- <p class="intro-text">Join the journey to the black alien ocean</p> -->
+                        <!-- <p class="intro-text">We are looking for the unexpected</p> -->
+                        <!-- <p class="intro-text">the journey into the blackest ocean</p> -->
+                        <!-- <p class="intro-text">uncover the black</p> -->
+                        <p class="intro-text">uncovering the mysteries of the blackest ocean</p>
+                        <a href="#surface" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="jupiter-wrap">
+                <!-- <video id="jupiter-live" src="img/jupiter_cq.webm" autoplay loop></video> -->
+                <!-- <video id="jupiter-live" src="img/out-vp8.webm" autoplay loop></video> -->
+                <div class="jupiter-crop">
+                <!-- <video id="jupiter-live" src="img/out-vp8.webm" autoplay loop></video> -->
+                <!-- <video id="jupiter-live" src="img/jupiter_cq2mp4.mp4" autoplay loop></video> -->
+
+
+                <video id="jupiter-live" autoplay loop>
+                    <!-- <source src="img/Jupiter_live450.webm" type="video/webm"> -->
+                    <!-- <source src="img/Jupiter_live.mp4" type="video/mp4"> -->
+                    <source src="img/Jupiter_live.mp4" type="video/mp4">
+
+                    <!-- <source src="img/jupiter_cq.webm" type="video/webm"> -->
+                    <!-- <source src="img/out-vp8.webm" type="video/webm"> -->
+                    <!-- <source src="img/jupiter_cq2mp4.mp4" type="video/mp4"> -->
+                </video>
+                </div>
+            </div>
+
+            <!-- <div class="jupiter-container"> -->
+                <!-- <img id="jupiter" src="img/Jupiter_frame7.png"> -->
+                <!-- <img id="jupiter" src="img/jupiter-nonvertical.png"> -->
+                <!-- <img id="jupiter" src="img/0001.png"> -->
+                <!-- <div id="greenbox"></div> -->
+
+                <!-- <video id="greenbox" width="650" height="650" src="img/output.webm" autoplay loop></video> -->
+                <!-- <video id="jupiter-live" width="650" height="650" src="img/out1.webm" autoplay loop></video> -->
+                <!-- <div id="dd" style="z-index: -300000; margin-bottom: -500px;"> -->
+               <!-- <video width="900" height="900" autoplay loop style="z-index: 1;"> -->
+
+                    <!-- <source src="img/output.webm" type="video/mp4"> -->
+                    <!-- <source src="img/output.webm"> -->
+                    <!-- <source src="img/video.mp4"> -->
+                    <!-- <source src="img/J3.mp4" type="video/mp4"> -->
+
+                <!-- </video> -->
+                <!-- </div> -->
+
+
+                
+            <!-- </div> -->
+
+            <div class="imgwrap">
+                <img id="surface" src="img/shmat_evropy5.png" align="middle">
+            </div>
+
+        </div>
+    </header>
+
+<!-- <div style="background: green; text-align: center;"> -->
+<!-- <video width="650" height="650" src="img/output.webm" autoplay loop></video> -->
+<!-- <canvas id="myCanvas" width="100%" height="800px"> -->
+
+<!--     <video id="video1" class="video-js vjs-default-skin" width="500" height="500"
+        data-setup='{"controls" : true, "autoplay" : true, "preload" : "auto"}'>
+        <source src="img/outFLV.flv" >
+    </video> -->
+
+<!-- </canvas> -->
+<!-- </div> -->
+
+    <!-- Ice -->
+    <div id="ice">
+        <section id="about" class="container content-section text-center">
+        <!-- <section id="about"> -->
+        
+            <div class="row icerow">
+                <div class="col-md-5 ice-block" style="direction: rtl;" id="ib1">
+                    
+                    <div id="ice-block1">
+
+                    <!-- <div id="text-below"> -->
+                    
+                    <h2>The smoothest moon</h2>
+                    <p>Europa is the second and the smallest of the four Galilean moons orbiting Jupiter. Being slightly smaller than Earth's moon, it orbits Jupiter every 3.5 days and is locked by gravity to Jupiter, so the the same hemisphere of the moon always faces the planet.</p>
+
+                    <p>Europa has the smoothest surface of any known solid object in the Solar System, which consists of water ice and crisscrossed by long, linear fractures. Based on the small number of craters observed, the surface of this moon appears to be no more than 40 to 90 million years old, which is quite young in geologic terms. </p>
+
+                    <p>The apparent youth and smoothness of the surface have led to the hypothesis that a water ocean exists beneath it, which could conceivably harbor extraterrestrial life. While evidence for this internal ocean is quite strong, its presence awaits confirmation by future missions. And the most challenging one would be an ice penetrating mission that will be targeted at taking water probes and reaching the ocean floor in search for possible life forms.</p>
+
+
+
+                    </div>
+
+  <!--                   <div class="shh">
+                    </div> -->
+                    
+                    <div id="readmore-ib1" style="direction: ltr;"></div>
+
+                    <!-- <a href=""  id="readmore">Read more</a> -->
+                    <!-- <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a></p> -->
+                    <!-- <hr id="line-extend"> -->
+                    
+                </div>
+                <!-- <hr id="line-extend"> -->
+                <!-- <hr> -->
+              </div>
+              
+              <div class="row icerow">  
+
+                <div class="col-md-5 col-md-offset-7 ice-block block2" id="ib2">
+                    <div id="ice-block2" class="solid-text">
+                    <!-- <div> -->
+                    <h2>The ice shield</h2>
+                    <p>Europa is unique among the large icy satellites. Its geodynamically active and relatively thin (3…30 km thick) ice crust covers the global water ocean that may reach over 100 km in depth. Along with a liquid ocean, Europa also likely harbors a rocky seafloor that can supply energy and elements needed to drive metabolism. </p>
+
+                    <p>Europa’s unusual surface is dominated by tectonic features in the form of linear ridges, bands, and fractures. The most striking of them are dark streaks crisscrossing the entire globe, called lineae. The most likely hypothesis states that the lineae on Europa may have been produced by a series of eruptions of warm ice as the crust spread open to expose warmer layers beneath. The signs of some suface activity that bay be water plumes  have been detected recently by the Hubble telescope. But still there is no solid evidence that water from the inner ocean is able to reach the surface through cracks in the ice crust.</p> 
+
+                    <p>This leads to the necessity in considering different possible ways of reaching Europa inner ocean in the frame of future landing missions. While most existing concepts of the Europa's ice crust penetration are oriented towards the development of an ice drillig or melting autonomous vehicles, there exist other means. And the most direct one is the high energy kinetic impact, capable of leaving a deep socket in ice, that may trail down to the deep warm ice layers or even pierce the whole ice crust. 
+                    </p>
+                    <!-- </div> -->
+                    </div>
+                    <div id="readmore-ib2"></div>
+                </div>
+                
+            </div>
+
+            <div class="row underice-row">
+                <div class="col-lg-4">
+                    <h2>Ice penetration methods</h2>
+                    <p>Europa is the smallest of the four Galilean moons orbiting Jupiter, and the sixth-closest to the planet. Slightly smaller than Earth's Moon, Europa is primarily made of silicate rock and has a water-ice crust and probably an iron–nickel core. It is believed that a giant salt water ocean resides under the ice crust. For this reason Europa may be a habitable world</p>
+                </div>
+
+                <div class="col-lg-4 col-lg-offset-4">
+                    <h2>EDEM approach</h2>
+                    <p>Europa is the smoothest known object in the Solar System, lacking large-scale features such as mountains and craters.
+                    Europa's most striking surface features are a series of dark streaks crisscrossing the entire globe, called lineae. Other features present on Europa are circular and elliptical lenticulae.</p>
+                    <p>Scientists' consensus is that a layer of liquid water exists beneath Europa's surface, and that heat from tidal flexing allows the subsurface ocean to remain liquid. It is estimated that the outer crust of solid ice is approximately 10–30 km. The liquid ocean underneath may be about 100 km.</p>
+                </div>
+
+            </div>
+        
+        </section>
+
+    </div>
+
+
+    <!-- Black section -->
+    <section id="underice" class="content-section text-center">
+    <!-- <section id="underice" class="content-section text-center" style="border: solid 1px green;"> -->
+        <div class="underice-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Ice penetration scheme</h2>
+                    <p>The mission concept is based on the application of an ultra-strong momentum exchange tether that is used for efficient deceleration of the Europa landing module and acceleration of the ice-penetration assets.</p>
+                </div>
+                <a class="more">Read more</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="black" class="content-section text-center">
+    <!-- <section id="underice" class="content-section text-center" style="border: solid 1px green;"> -->
+        <div class="underice-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Project description</h2>
+                    <p>The mission concept is based on the application of an ultra-strong momentum exchange tether that is used for efficient deceleration of the Europa landing module and acceleration of the ice-penetration assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="underblack" class="content-section text-center">
+    <!-- <section id="underice" class="content-section text-center" style="border: solid 1px green;"> -->
+        <div class="underice-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>AUV description</h2>
+                    <p>The mission concept is based on the application of an ultra-strong momentum exchange tether that is used for efficient deceleration of the Europa landing module and acceleration of the ice-penetration assets.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <!-- <section id="oceanfloor1" class="content-section text-center"> -->
+    <section class="text-center">
+
+<!-- <div style="background-color: #340083;">
+Bebeveve
+</div> -->
+
+    <!-- <section id="underice" class="content-section text-center" style="border: solid 1px green;"> -->
+    <div class="content-section" style="background-color: #340053; align: bottom">
+        <div class="underice-section" id="oceanfloor">
+        <!-- <div class="underice-section" id="oceanfloor"> -->
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Welcome from europeans</h2>
+                    <p>The mission concept is based on the application of an ultra-strong momentum exchange tether that is used for efficient deceleration of the Europa landing module and acceleration of the ice-penetration assets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <p>If you are interested in details or willing to help the project, please feel free to write us!</p>
+                <p><a href="mailto:mail@vadym-pasko.com">mail@vadym-pasko.com</a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; EDEM 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+    <!-- Theme JavaScript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
