@@ -455,6 +455,11 @@ video#jupiter-live {
   /*font-size: 1.1em;*/
 }
 
+.underice-row p {
+text-align: justify;
+
+}
+
 
 #hidden_block {
   height: 300px;
@@ -713,7 +718,17 @@ height: 150vw;
 
 
 .underice-row {
-  margin-top: 200px;
+  display: block;
+  /*text-align: center;*/
+  margin: 0;
+  padding: 50px;
+  /*margin-top: 100px;*/
+  width: 100%;
+  /*padding: 0;*/
+/*  margin-left: 10%
+  margin-right: 10%;*/
+  /*margin-top: 250px;*/
+  /*margin-top: 30vw;*/
 }
 
 
@@ -838,17 +853,31 @@ height: 150vw;
   padding-top: 100px;
 }
 
+#blue-ocean {
+
+  text-align: center;
+  align-content: center;
+  display: block;
+  float: right;
+
+}
+
+
 #underice {
   /*padding: 0;*/
   /*margin: 0;*/
-  background-color: #053f57;
-  background: -webkit-linear-gradient(180deg, rgb(5, 63, 87), rgb(0, 0, 0));
+  background: #053f57;
+  background: -webkit-linear-gradient(270deg, rgb(5, 63, 87), rgb(0, 0, 0));
+  background: -moz-linear-gradient(270deg, rgb(5, 63, 87), rgb(0, 0, 0));
   background: linear-gradient(180deg, rgb(5, 63, 87), rgb(0, 0, 0));
 
-/*  background: -webkit-linear-gradient(180deg, rgb(5, 63, 87), rgb(1, 16, 22));
-  background: linear-gradient(180deg, rgb(5, 63, 87), rgb(1, 16, 22));*/
-  
-  height: 900px;
+  /*height: 900px;*/
+  text-align: center;
+  align-content: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+  float: right;
 }
 
 
@@ -874,10 +903,15 @@ height: 150vw;
 }
 
 .underice-section {
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
   /*padding: 50px 0;*/
   /*padding: 0;*/
-  color: white;
+  /*color: white;*/
+  color: #aebdcf;
   /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
   
   /*border: solid 1px blue;*/
@@ -1018,6 +1052,12 @@ ul.banner-social-buttons {
 
 
   }
+
+/*  .underice-row {
+    margin-top: 250px;
+  }
+*/
+
 
 /*  .collapsed {
     height: 200px;
