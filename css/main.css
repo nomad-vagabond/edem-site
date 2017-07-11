@@ -1059,6 +1059,30 @@ text-align: justify;
   color: #aebdcf;
 }
 
+#tether {
+  padding-left: 3vw;
+  padding-right: 3vw;
+
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+
+  -webkit-column-gap: 10vw; /* Chrome, Safari, Opera */
+  -moz-column-gap: 10vw; /* Firefox */
+  column-gap: 10vw;
+  }
+
+#tether h2 {
+    /*-webkit-column-span: all;*/
+    /*-moz-column-span: all;*/
+    /*column-span: all;*/
+    /*text-align: left;*/
+}
+
+
+
+
+/*   ===========   FLOOR   ============   */
 
 
 #oceanfloor {
