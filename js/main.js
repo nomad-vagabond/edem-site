@@ -52,9 +52,6 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
-
-
-
 var block1 = $('#ice-block1');
 block1.state = 'expanded';
 var iblock1 = $('#ib1');
@@ -66,7 +63,6 @@ block2.state = 'expanded';
 var iblock2 = $('#ib2');
 var readmore2 = $('#readmore-ib2');
 iblock2.cshadow = 'inset -10px 0px 20px -6px #365470';
-
 
 
 function checkSize(block, iblock, readmore) {
