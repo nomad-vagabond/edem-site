@@ -901,6 +901,7 @@ text-align: justify;
 
 .underice-block {
   padding: 5vw;
+  padding-bottom: 0;
   /*padding: 40px;*/
 /*  padding-left: 5%;
   padding-right: 5%;*/
@@ -910,7 +911,8 @@ text-align: justify;
   display: block;
   /*text-align: center;*/
   /*padding: 10%;*/
-  padding: 2vw;
+  padding-left: 2vw;
+  padding-bottom: 2vw;
   margin: 0;
   /*padding: 50px;*/
   /*margin-top: 100px;*/
