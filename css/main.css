@@ -406,10 +406,17 @@ canvas {
 
 
 
+/*.block-p {
+  display: inline-block;
+}*/
 
 
+@media(min-width: 1300px) {
 
-
+  .block-p {
+    display: inline-block;
+  }
+}
 
 
 
@@ -1101,6 +1108,23 @@ text-align: justify;
 }
 
 
+
+#layout-scheme-wrap {
+  /*padding: 2vw;*/
+  padding: 0;
+  padding-bottom: 3em;
+  /*border: 1px solid red;*/
+}
+
+
+#layout-scheme{
+  width: 100%;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+
+
 .black {
 
   background-color: black;
@@ -1110,6 +1134,8 @@ text-align: justify;
 #tether {
   padding-left: 3vw;
   padding-right: 3vw;
+
+  /*column-fill: initial;*/
 
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -1141,6 +1167,18 @@ text-align: justify;
 
 
 /*   ===========   FLOOR   ============   */
+
+
+#violet {
+  background: rgb(52, 0, 131);
+}
+
+
+
+
+
+
+
 
 
 #oceanfloor {
