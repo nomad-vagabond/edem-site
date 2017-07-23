@@ -177,6 +177,13 @@ canvas {
   width: 89%;
 }
 
+.img-container {
+  /*width: 89%;*/
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
 .img-title {
   font-size: 1.4em;
   text-align: center;
@@ -411,7 +418,7 @@ canvas {
 }*/
 
 
-@media(min-width: 1300px) {
+@media(min-width: 1200px) {
 
   .block-p {
     display: inline-block;
@@ -879,11 +886,54 @@ video#jupiter-live {
     height: 50vw;
   }
 
+  .img-container {
+    /*display: inline-block;*/
+    width: 80%;
+    padding: 5vw;
+  }
+
+  #snake-wrap {
+    /*width: 80%;*/
+    padding-right: 3vw;
+    padding-left: 3vw;
+  }
+
 
 }
 
+/*#snake-wrap {
+  width: 100%;
+}*/
+
+#descent {
+  /*border: solid 1px green;*/
+  max-width: 50%;
+  /*max-height: 300px;*/
+  display: inline-block;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 50%;
+}
 
 
+.narrow-container {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+
+#may-be {
+  /*width: 90%;*/
+  /*margin-top: 3em;*/
+  height: 600px;
+  padding: 5em;
+  
+}
+
+#may-be h3 {
+ line-height: 1.5em; 
+}
 
 
 @media (min-width: 1200px) {
@@ -935,6 +985,10 @@ text-align: justify;
 
 /*   ==========   BLACK   ===========   */
 
+.top-offset {
+  padding-top: 5em;
+}
+
 
 .black-section {
   margin-top: 2em;
@@ -943,8 +997,15 @@ text-align: justify;
   color: #aebdcf;
 }
 
-.black-section p {
+.black-section p, .violet-section p {
   text-align: justify;
+}
+
+.violet-section {
+  /*margin-top: 2em;*/
+  text-align: center;
+  width: 100%;
+  color: #aebdcf;
 }
 
 
@@ -1031,6 +1092,13 @@ text-align: justify;
   column-count: 1;
   }*/
 
+
+  #drone-pics {
+    /*margin-top: 5em;*/
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
 }
 
 
@@ -1054,6 +1122,50 @@ text-align: justify;
   /*border: 1px solid red;*/
 }
 
+
+
+#spin-scheme-wrap {
+  padding: 0;
+  padding-bottom: 3em;
+  /*border: 1px solid red;*/
+}
+
+
+.img-center {
+  width: 100%;
+  padding: 3vw;
+  /*padding-left: 3vw;*/
+  /*padding-right: 3vw;*/
+}
+
+
+.img-vsep {
+  height: 6vw;
+}
+
+.last-img {
+  padding-bottom: 3em;
+}
+
+
+.tall-img {
+  /*border: solid 1px red;*/
+  /*height: 200%;*/
+}
+
+/*.high-row {*/
+  /*height: 80vh;*/
+  /*height: 1000px;*/
+/*}*/
+
+#right-drone {
+  margin-top: 10vw;
+}
+
+
+#drone-pics {
+  margin-top: -3em;
+}
 
 #spin-scheme{
 
@@ -1137,6 +1249,10 @@ text-align: justify;
 
   /*column-fill: initial;*/
 
+/*  -webkit-column-fill: balance;
+  -moz-column-fill: balance;
+  column-fill: balance;*/
+
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
@@ -1169,27 +1285,74 @@ text-align: justify;
 /*   ===========   FLOOR   ============   */
 
 
+.r-img {
+  padding-top: 0;
+  padding-bottom: 5em;
+
+}
+
 #violet {
   background: rgb(52, 0, 131);
 }
 
 
+.widerow {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#ofloor {
+  width: 100%;
+    margin: 0;
+  padding: 0;
+}
 
 
 
+.bottom_aligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
+}
+
+
+#oceanfloor-wrap {
+  border: 1px solid pink;
+  background-color: red;
+/*  width: 100%;
+  height: 150vw;*/
+  /*position: relative;*/
+  /*display: table-cell;*/
+  /*vertical-align: bottom;*/
+  /*height: 200vw;*/
+}
 
 
 
 
 #oceanfloor {
-position: relative;
-width: 100%;
-height: 150vw;
+  border: 1px solid yellow;
+  position: relative;
+  /*position: absolute;*/
+  width: 100%;
+  height: 150vw;
   margin: 0;
   padding: 0;
-  background-color: #340083;
+  left: 0;
+  bottom: 0;
+  /*background-color: #340083;*/
+  background-color: green;
   background: url(../img/bottom_vector4K_smoke.png) no-repeat top center;
   background-size: 100%;
+
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;*/
 
 }
 
