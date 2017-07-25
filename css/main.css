@@ -956,6 +956,16 @@ text-align: justify;
 }
 
 
+.underice-row h2 {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.underice-row form {
+  text-align: center;
+  padding: 1em; 
+}
+
 .underice-block {
   padding: 5vw;
   padding-bottom: 0;
@@ -1140,9 +1150,17 @@ text-align: justify;
 
 #img-worm {
   width: 100%;
+  max-width: 1200px;
   padding: 5vw;
   padding-bottom: 2em;
 }
+
+#img-worm2 {
+  width: 80%;
+  max-width: 1000px;
+  padding: 5vw;
+}
+
 
 
 .img-vsep {
