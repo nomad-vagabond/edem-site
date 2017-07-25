@@ -283,29 +283,78 @@ canvas {
   font-family: 'Oswald', sans-serif;
 }
 
+.scrolly {
+  margin-bottom: -4%;
+  padding-top: 4.5%;
+
+}
+.page-scroll {
+  display: inline-block; 
+  
+  /*padding: 0;*/
+  /*margin: 0;*/
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.image-up, .image-down {
+  height: 11vh;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+}
+
+.image-up {
+  opacity: 0.0;
+  filter: alpha(opacity=99); /* IE */
+  display: block;
+  position: absolute;
+  z-index: 100;
+  transition-duration: 0.96s;
+  -webkit-transition-duration: 0.96s;
+  -moz-transition-duration: 0.96s;
+  -o-transition-duration: 0.96s;
+  -ms-transition-duration:  0.96s; /* IE9+ */
+}
 
 
+.image-up:hover  {
+  border: 0;
+  opacity: 1.00;
+  filter: alpha(opacity=00); /* IE */
+}
+
+@media (max-width: 768px) {
+  .image-up, .image-down {
+    height: 7vh;
+}
+}
 
 
 
 
 
 @media (min-height: 700px) {
-  .btn-circle {
-    margin-bottom: 50px; 
+  .image-up, .image-down {
+    margin-bottom: 0px;
+    
+
   }
 }
 
 @media (min-height: 800px) {
-  .btn-circle {
-    margin-bottom: 100px; 
+  .image-up, .image-down{
+    margin-bottom: 0px; 
+    
   }
 }
 
 @media (min-height: 900px) {
 
-  .btn-circle {
-    margin-bottom: 150px; 
+  .image-up, .image-down {
+    margin-bottom: 0px; 
+   
   }
 
   .intro .intro-body .brand-heading {
@@ -337,17 +386,17 @@ canvas {
 }
 
 
-.btn-circle {
+/*.btn-circle {
   width: 70px;
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  /*border: 2px solid white;*/
+  border: 2px solid white;
   border: 3px solid #808080;
   border: 0 solid #808080;
   border-radius: 100% !important;
   font-size: 40px;
-  /*color: #c55d22;*/
+  color: #c55d22;
   color:  #808080;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
@@ -375,8 +424,8 @@ canvas {
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
-}
-@-webkit-keyframes pulse {
+}*/
+/*@-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -403,7 +452,7 @@ canvas {
     -moz-transform: scale(1);
     transform: scale(1);
   }
-}
+}*/
 
 
 
