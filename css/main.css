@@ -256,16 +256,16 @@ canvas {
 }
 .intro .intro-body .brand-heading {
   /*font-size: 40px;*/
-  color: #e7cec4;
-  color: #ded9f1;
+/*  color: #e7cec4;
+  color: #ded9f1;*/
   color: #c55d22;
   font-size: 4em;
-  font-family: 'Roboto', sans-serif;
+/*  font-family: 'Roboto', sans-serif;
   font-family: 'Titillium Web', sans-serif;
   font-family: 'Oswald', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   font-family: 'Oxygen', sans-serif;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Overpass', sans-serif;*/
   font-family: 'Telex', sans-serif;
   /*font-family: 'Rubik', sans-serif;*/
   /*text-shadow: 0 8px 15px #c55d22;*/
@@ -273,6 +273,9 @@ canvas {
   /*text-shadow: 10px 0 14px #c55d22;*/
 
   letter-spacing: 3px;
+  /*padding-bottom: 0;*/
+  margin-bottom: 0.3em;
+
 
 }
 .intro .intro-body .intro-text {
@@ -285,7 +288,8 @@ canvas {
 
 .scrolly {
   margin-bottom: -4%;
-  padding-top: 4.5%;
+  /*padding-top: 4.5%;*/
+  padding-top: 0;
 
 }
 .page-scroll {
@@ -324,6 +328,14 @@ canvas {
   opacity: 1.00;
   filter: alpha(opacity=00); /* IE */
 }
+
+
+/*.heading-row {
+  border: 1px red solid;
+}*/
+
+
+
 
 @media (max-width: 768px) {
   .image-up, .image-down {
@@ -631,6 +643,7 @@ video#jupiter-live {
   /*margin-bottom: 0;*/
   /*margin-bottom: 0;*/
   /*display: inline-block;*/
+  margin-bottom: -1px; 
   
   
   /*width: 100%;*/
@@ -1358,6 +1371,12 @@ text-align: justify;
 /*   ===========   FLOOR   ============   */
 
 
+.big-first:first-letter {
+  font-size: 180%;
+  line-height: 1.2em;
+
+}
+
 .r-img-left {
   /*padding-left: 10vw;*/
   margin-left: -20%;
@@ -1707,12 +1726,25 @@ ul.banner-social-buttons {
   .intro .intro-body .brand-heading {
     /*text-align: left;*/
     font-size: 2.8em;
+    margin-bottom: 6vh;
     
   }
 
   .intro .intro-body .intro-text {
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 1.3em;
     /*margin-bottom: 1em;*/
+  }
+
+
+  .intro-text p{
+    margin: 0;
+    padding: 0;
+    border: solid 1px blue;
+  }
+
+  .heading-row {
+    margin-bottom: 12vh;
   }
 
 
