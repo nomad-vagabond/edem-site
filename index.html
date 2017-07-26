@@ -167,7 +167,7 @@
 
 
 
-            <div class="imgwrap">
+            <div id="surface-wrap">
                 <img id="surface" src="img/shmat_evropy5.png" align="middle">
             </div>
 
@@ -180,8 +180,8 @@
     <div id="ice">
         <section id="about" class="container content-section text-center">
         
-            <div class="row icerow">
-                <div class="col-md-5 ice-block" style="direction: rtl;" id="ib1">
+            <div class="row">
+                <div class="col-md-5 ice-block" id="ib1">
                     <div id="ice-block1">
 
                         <h2>The smoothest moon</h2>
@@ -193,12 +193,12 @@
 
                     </div>
 
-                    <div id="readmore-ib1" style="direction: ltr;"></div>
+                    <div id="readmore-ib1"></div>
 
                 </div>
               </div>
               
-              <div class="row icerow">  
+              <div class="row">  
 
                 <div class="col-md-5 col-md-offset-7 ice-block block2" id="ib2">
                     <div id="ice-block2" class="solid-text">
@@ -266,7 +266,7 @@
             <div class="row underice-row">
             <!-- <div class="row black-row"> -->
             <!-- <div class="container"> -->
-                <div class="col-md-6 underice-block">
+                <div class="col-md-6 black-block">
                     <!-- <h2>Penetration assets</h2> -->
                     <p class="big-first">Penetration through the Europa's ice crust with kinetic impact requires application of dense projectiles, capable of withstanding high heat flux. Since the path of the projectile in ice is related to its velocity and diameter, maximization of these parameters is highly desirable. Unfortunately, maximization of the projectile's diameter is limited by the weight constraints.</p>
 
@@ -277,13 +277,15 @@
                     <p id="velocity-undertext">The increase of the impact velocity can be achieved by several means. One of them is in the selection of an appropriate flight scheme and another is in the application of the momentum exchange tether that is severed or released at the approach to the target.</p>
                 </div>
       
-                <div class="col-md-6 underice-block">
-                    <div id="penetration-scheme-wrap">
-                        <img src="img/EDEM-penetration.png" id="penetration-scheme">
-                    </div>
+                <div class="top-offset-small">
+                    <div class="col-md-6 black-block text-center">
+                        <div id="penetration-scheme-wrap">
+                            <img src="img/EDEM-penetration.png" id="penetration-scheme">
+                        </div>
 
-                    <p id="velocity-underimg">The increase of the impact velocity can be achieved by several means. One of them is in the selection of an appropriate flight scheme and another is in the application of the momentum exchange tether that is severed or released at the approach to the target.</p>
-                    <div id="departure"></div>
+                        <p id="velocity-underimg">The increase of the impact velocity can be achieved by several means. One of them is in the selection of an appropriate flight scheme and another is in the application of the momentum exchange tether that is severed or released at the approach to the target.</p>
+                        <div id="departure"></div>
+                    </div>
                 </div>
             </div>
     </section>
@@ -294,7 +296,7 @@
 
     <!-- <section class="black" style="border: solid 1px blue;"> -->
     <section class="black">
-        <div class="row top-offset-small">
+        <div class="row top-offset">
             <h2>Tether acceleration</h2>
         </div>
 
@@ -310,7 +312,7 @@
 
                 <p>Such long time of the flight is just enough for a pair of ion thrusters to accelerate the tether to the desired angular velocity. The thrusters will be mounted on two separate modules. One of them consists of an Europa lander and kinetic ice penetration assets (optionally). Another - is an empty rocket's upper stage, that will be thrown away into a deep space after tether release on the approach to Europa.</p>
 
-                <div id="trajectory-scheme-wrap">
+                <div id="trajectory-scheme-wrap" class="text-center">
                     <img src="img/Clipper_trajectory_contrast.png" id="trajectory-scheme">
                     <div class="img-title">Possible trajectory for the Europa Multiple Flyby Mission</div>
                 </div>
@@ -324,7 +326,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 wide-black">
+            <div class="col-md-8 col-md-offset-2">
                 <div id="spin-scheme-wrap">
                     <img src="img/EDEM_flight_scheme_escape4.png" id="spin-scheme">
                 </div>
@@ -361,14 +363,14 @@
         </div>
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 wide-black">
+            <div class="col-md-8 col-md-offset-2">
                 <div id="spin-scheme-wrap">
                     <img src="img/Jupiter_approach.png" id="spin-scheme">
                 </div>
             </div>
         </div>
 
-        <div class="row black-row">
+        <div class="row">
             <div class="container double-col">
 
                 <p class="block-p">At the distance r from Jupiter penetration assets will separate from one of the spacecraft modules, so that its resultant trajectory is targeted towards the oncoming Europa. This will increase the impact velocity by the Europa's orbital velocity and a bit more due to the Europa's gravity. In such scenario the impact velocity can reach 30..40 km/s depending on the distance from Jupiter at the moment of separation.</p>
@@ -383,7 +385,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 wide-black">
+            <div class="col-md-8 col-md-offset-2">
                 <div id="spin-scheme-wrap">
                     <img src="img/Separation4.png" id="spin-scheme">
                 </div>
@@ -420,22 +422,21 @@
         </div>
 
 
-        <div class="row">
+        <div class="row text-center">
             <div class="img-container">
-                <div class="col-md-5 col-md-offset-1 wide-black">
+                <div class="col-md-5 col-md-offset-1">
                     <div class="tall-img">
                         <img src="img/SC_layout_T.png" class="img-center">
                     </div>
                 </div>
 
-                <div class="col-md-5 wide-black">
+                <div class="col-md-5">
                     <div class="tall-img">
                         <img src="img/Payload_layout_T.png" class="img-center">
                     </div>
                 </div>
             </div>
         </div>
-
 
         <div class="row">
 
@@ -447,8 +448,10 @@
 
                 <p>The kinetic penetration assets, is an optional payload. Their efficiency still has to be proven by the series of numerical simulations and laboratory tests. This is the subject of ongoing research. If included in the payload, they probably will be attached to the second module. The set of impactors will be mounted on the adapter, equipped with attitude control engines. After separation from the rotating spacecraft these engines will be used to form the sequence of impactors, oriented along the vector that is collinear to the velocity vector at the moment of impact. This will ensure that all impactors will hit the ice in the same point.</p>
 
-                <div class="img-container">
-                    <img src="img/AUV_in_lander_layout.png" class="img-center">
+                <div class="text-center">
+                    <div class="img-container">
+                        <img src="img/AUV_in_lander_layout.png" class="img-center">
+                    </div>
                 </div>
             </div>
 
@@ -482,7 +485,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-10 col-md-offset-1">
                     <!-- <div id="spin-scheme-wrap"> -->
                     <div id="snake-wrap">
@@ -498,34 +501,34 @@
             <dir class="img-vsep"></dir>
 
             <div class="row last-img">
-                <div class="container">
+                <div class="container text-center">
                     <div class="img-container">
 
                         <div class="col-md-4">
                             <!-- <div class="img-container"> -->
                             <!-- <div class="r-img-wrap-left"> -->
-                            <div class="r-img-wrap">
+                            <!-- <div class="r-img-wrap"> -->
                                 <h4>Head module</h4>
                                 <img src="img/RR-head-module.png" class="img-center r-img r-img-left">
-                            </div>
+                            <!-- </div> -->
                             <!-- </div> -->
                         </div>
 
                         <div class="col-md-4">
                             <!-- <div class="img-container"> -->
-                            <div class="r-img-wrap">
+                            <!-- <div class="r-img-wrap"> -->
                                 <h4>Microdrone module</h4>
                                 <img src="img/RR-microdrone-module.png" class="img-center r-img r-img-center">
-                            </div>
+                            <!-- </div> -->
                         </div>
 
                         <div class="col-md-4">
                             <!-- <div class="img-container"> -->
                             <!-- <div class="r-img-wrap-right"> -->
-                            <div class="r-img-wrap">
+                            <!-- <div class="r-img-wrap"> -->
                                 <h4>Tail module</h4>
                                 <img src="img/RR-tail-module.png" class="img-center r-img r-img-right">
-                            </div>
+                            <!-- </div> -->
                             <!-- </div> -->
                         </div>
                     </div>
@@ -557,7 +560,7 @@
                 </div>
             </div>
 
-            <div class="row black-row">
+            <div class="row">
                 <div class="container double-col">
 
                     <p>Two last modules of the Iceworm are dedicated to the nuclear power sources. The Stirling Radioisotope Generator (SRG) of the third module produces more than a half of the electrical energy, consumed by all systems of the Iceworm. The tail module contains second SRG. It can work in two modes - generator and heater. Last one is essential for heating the water, sucked from the melted exterior ice and push it out from the jets in the tail to melt the ice below. Thus, during the ice penetration phase of its motion Iceworm moves backwards.</p>
@@ -613,12 +616,13 @@
     <!-- <section id="contact" class="container content-section text-center"> -->
     <!-- <section id="contact" class="container text-center "> -->
     <section class="black top-offset" id="contact">
-        <div class="containerX">
+        <!-- <div class="containerX"> -->
 
 
             <div class="row underice-row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Support the project</h2>
+                    
                     <p>We are a tiny group of enthusiastic folks, driven by the spirit of the discovery. Our vision of the future of scientific breakthrougs points the way for efforts that have to be taken today. Our ideas may become reality one day if we spread the knowledge and collaborate in development of next-generation technologies. We need your support, in first place - to make it possible for us to present the paper about our project on the International Astronautical Congress that will take place in Adelaide, Australia from 25 – 29 September 2017, and, secondly - to appreciate the effort that has been made to develop the concept of EDEM.</p>
 
 
@@ -691,7 +695,7 @@
 
 
 
-        </div>
+        <!-- </div> -->
     </section>
 
 
