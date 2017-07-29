@@ -174,7 +174,6 @@ section {
   -moz-column-gap: 10vw;
   column-gap: 10vw;
 
-
   /*column-fill: initial;*/
 
   /*  
@@ -183,6 +182,10 @@ section {
   column-fill: balance;
   */
 
+}
+
+.enlarged p {
+  font-size: 1.5em;
 }
 
 .big-first {
@@ -287,6 +290,7 @@ section {
 
 
 @media (min-width: 768px) {
+/*@media (min-width: 900px) {*/
   .navbar-custom {
     padding: 20px 0;
     border-bottom: none;
@@ -359,7 +363,7 @@ section {
 
 
 .heading-row {
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
 }
 
 
@@ -437,7 +441,8 @@ section {
   }
 }
 
-@media (min-width: 767px) {
+/*@media (min-width: 767px) {*/
+@media (max-width: 767px) {
   .intro {
     height: 100%;
     /*padding: 0;*/
@@ -463,7 +468,7 @@ section {
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 600px) {
 
   .intro .intro-body .brand-heading {
     font-size: 2.8em;
