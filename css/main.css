@@ -89,6 +89,17 @@ canvas {
 
 .container {
   width: 89%;
+/*  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;*/
+  /*border: 1px solid yellow;*/
+
+}
+
+.container-wide {
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .img-container {
@@ -108,6 +119,13 @@ canvas {
 
 section {
   color: #aebdcf;
+}
+
+.row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /*border: solid 1px cyan;*/
 }
 
 .row p {
@@ -1097,6 +1115,28 @@ ul.banner-social-buttons {
     padding-bottom: 5em;
   }
 
+}
+
+.photo {
+  max-width: 250px;
+  padding: auto;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  /*border: solid red 1px;*/
+}
+
+.photo-container h4 {
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.5em;
+
+
+}
+
+.role-container {
+  text-align: center top;
+  height: 4em;
 }
 
 
