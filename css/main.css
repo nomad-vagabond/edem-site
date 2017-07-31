@@ -669,6 +669,49 @@ video#jupiter-live {
   height: 85%;
   overflow: hidden;
   direction: ltr; 
+
+/*  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;*/
+}
+
+.ice-over {
+  overflow: hidden;
+  border-radius: 8px;
+  /*border: solid red 1px;*/
+/*  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: table;
+  margin: 0;
+  padding: 0;*/
+}
+
+#ice-shadow1 {
+/*  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;*/
+
+  /*border: solid red 1px;*/
+  margin-right: -3em;
+  margin-left: -3em;
+  /*padding: 0;*/
+  padding-left: 3em;
+  padding-right: 3em;
+  /*box-shadow: inset 0px 0px 20px -6px #365470;*/
+  /*background-color: green;*/
+  /*z-index: -1;*/
+}
+
+
+#ice-shadow2 {
+  margin-right: -3em;
+  margin-left: -3em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 #ice-block2 {
@@ -678,6 +721,15 @@ video#jupiter-live {
 
 #ib1 {
   direction: rtl;
+  padding-left: 1em;
+  padding-right: 1em;
+/*  margin-right: 0;
+  margin-left: 0;*/
+}
+
+#ib2 {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .solid-text {
@@ -701,26 +753,52 @@ video#jupiter-live {
 
 }*/
 
+.mCustomScrollbar {
+  /*border: solid 1px green;*/
+/*  padding-top: 1em;
+  padding-bottom: 1em;*/
+}
+
+.mCSB_scrollTools {
+/*  padding-top: 1em;
+  padding-bottom: 1em;*/
+}
+
 
 .ice-block {
-  font-size: 1.1em;
-  padding-top: 1em;
+  /*font-size: 1.1em;*/
+  /*font-size: 0.9em;*/
+  /*padding-top: 1em;*/
   overflow-y: auto;
   border-radius: 8px;
+
+/*  padding-left: 2em;
+  padding-right: 2em;*/
 
   /*height: 30vw;*/
   height: 60vw;
   /*height: 85%;*/
-  margin-top: 1em;
-  margin-bottom: 1em;
+  /*margin-top: 1em;*/
+  /*margin-bottom: 1em;*/
+  /*border: solid 1px green;*/
+}
+
+.ice-block h2 {
+  padding-top: 1em;
 }
 
 
-.ice-block.block2 {
+/*.ice-block.block2 {
+  margin-top: -15em;
+}
+*/
+
+.block2 {
   margin-top: -15em;
 }
 
-.ice-block::-webkit-scrollbar {
+
+.ice-block-SSS::-webkit-scrollbar {
   /* for vertical scrollbars */
   width: 16px;
   /* for horizontal scrollbars */
@@ -728,7 +806,7 @@ video#jupiter-live {
   border-radius: 8px;
 }
 
-.ice-block::-webkit-scrollbar-track {
+.ice-block-SSS::-webkit-scrollbar-track {
   /*background: rgba(0, 0, 0, 0.1);*/
   /*background: #365470;*/
   /*background: #245d77;*/
@@ -740,7 +818,7 @@ video#jupiter-live {
   margin-bottom: 1px;
 }
 
-.ice-block::-webkit-scrollbar-thumb {
+.ice-block-SSS::-webkit-scrollbar-thumb {
   /*background: rgba(0, 0, 0, 0.5);*/
   /*background: #99acbd;*/
   /*background: #879eaf;*/
@@ -754,6 +832,8 @@ video#jupiter-live {
   border-radius: 8px;
 
 }
+
+
 
 #readmore-ib1 {
   text-align: right;
@@ -792,7 +872,12 @@ video#jupiter-live {
       height: 70vw;
   }
 
-  .ice-block.block2 {
+  /*.ice-block.block2 {*/
+      /*margin-top: 5vw;*/
+      /*height: 80vw;*/
+  /*}*/
+
+  .block2 {
       /*margin-top: 5vw;*/
       height: 80vw;
   }
@@ -825,7 +910,12 @@ video#jupiter-live {
     border: solid 1px #879eaf;
   }
 
-  .ice-block.block2 {
+/*  .ice-block.block2 {
+    margin-top: 0;
+    height: 50vw;
+  }*/
+
+  .block2 {
     margin-top: 0;
     height: 50vw;
   }
