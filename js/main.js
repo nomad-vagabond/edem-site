@@ -264,9 +264,6 @@ $('#readmore-ib2').click(function() {
 });
 
 
-
-
-
 // (function($){
 //     $(window).on("load",function(){
 
@@ -296,3 +293,41 @@ $('#readmore-ib2').click(function() {
         
 //     });
 // })(jQuery);
+
+
+
+/*------Donation button BTCOIN------*/
+
+/*------Open by click button and close by x------*/
+    $(document).ready(function() {
+  $("button").click(function() {
+    $(".pop").fadeIn(300);
+  });
+
+  $(".pop > span").click(function() {
+    $(".pop").fadeOut(300);
+  });
+}) (jQuery);
+
+
+/* --------Highlight all text by click on input---------*/
+$("input").focus(function(){
+    if(this.value == this.defaultValue){
+        this.select();
+    }
+});
+/*------Eng donation button BTCOIN------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
