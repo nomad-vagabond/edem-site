@@ -299,23 +299,57 @@ $('#readmore-ib2').click(function() {
 /*------Donation button BTCOIN------*/
 
 /*------Open by click button and close by x------*/
-    $(document).ready(function() {
-  $("button").click(function() {
-    $(".pop").fadeIn(300);
-  });
 
-  $(".pop > span").click(function() {
-    $(".pop").fadeOut(300);
-  });
-}) (jQuery);
+$(window).on('load', function() {
+
+    $("button").click(function() {
+        $(".pop").fadeIn(300);
+    });
+
+    $(".pop > span").click(function() {
+        $(".pop").fadeOut(300);
+    });
+
+    $('#wallet').each(function() { this.reset() });
+
+
+ // $("#wallet").keypress(function(ev){
+ //      var value = "3NojDmjzn4hxV1GuaXNZX5HxwKBjz4Y9kK";
+ //      var tval = this.value;
+ //      var c = ev.charCode || ev.keyCode;
+ //      this.selectionStart = this.selectionEnd = this.value.length;
+ //      if (tval.length == value.length && c == 8){
+ //           ev.preventDefault();
+ //      }
+ //      this.value = value + tval.substring(value.length);
+ // });
+
+
+});
+
+
+
+//     $(document).ready(function() {
+//   $("button").click(function() {
+//     $(".pop").fadeIn(300);
+//   });
+
+//   $(".pop > span").click(function() {
+//     $(".pop").fadeOut(300);
+//   });
+// }) (jQuery);
 
 
 /* --------Highlight all text by click on input---------*/
-$("input").focus(function(){
-    if(this.value == this.defaultValue){
-        this.select();
-    }
-});
+// $("input").focus(function(){
+//     if(this.value == this.defaultValue){
+//         this.select();
+//     }
+// });
+
+
+
+
 /*------Eng donation button BTCOIN------*/
 
 

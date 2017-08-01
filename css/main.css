@@ -1324,8 +1324,8 @@ body {
   width: 93%;
   padding: 7px;
   font-size: 15px;
-  color: #3f3f3f;
-  background-color: #ffffff;
+  color: black;
+  background: white;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1335,6 +1335,16 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+input::selection {
+  background: lightblue;
+}
+
+input::-moz-selection{
+  background: lightblue;
+}
+
+
 
 .pop > span {
   cursor: pointer;
@@ -1363,3 +1373,19 @@ body {
     margin-top: -80px;
 }
 /*------EDnd donation button BTCOIN------*/
+
+
+
+/*button,
+input,
+optgroup,
+select,
+textarea,html input[type="button"],
+input[type="reset"],
+input[type="submit"],button[disabled],
+html input[disabled],button::-moz-focus-inner,
+input::-moz-focus-inner, input[type="checkbox"],
+input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
+*/
