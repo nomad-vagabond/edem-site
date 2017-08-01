@@ -341,11 +341,11 @@ $(window).on('load', function() {
 
 
 /* --------Highlight all text by click on input---------*/
-// $("input").focus(function(){
-//     if(this.value == this.defaultValue){
-//         this.select();
-//     }
-// });
+$("#wallet").focus(function(){
+    if(this.value == this.defaultValue){
+        this.select();
+    }
+});
 
 
 
