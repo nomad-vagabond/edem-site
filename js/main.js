@@ -100,15 +100,18 @@ $('.navbar-collapse ul li a').click(function() {
 var block1 = $('#ice-block1');
 block1.state = 'expanded';
 var iblock1 = $('#ib1');
+iblock1.ish = $('#ice-shadow1');
 var readmore1 = $('#readmore-ib1');
-var ish1 = $('#ice-shadow1')
+var ish1 = $('#ice-shadow1');
 // iblock1.cshadow = 'inset 10px 0px 20px -6px #365470';
 
 var block2 = $('#ice-block2');
 block2.state = 'expanded';
 var iblock2 = $('#ib2');
+
+iblock2.ish = $('#ice-shadow2');
 var readmore2 = $('#readmore-ib2');
-var ish2 = $('#ice-shadow2')
+var ish2 = $('#ice-shadow2');
 // iblock2.cshadow = 'inset -10px 0px 20px -6px #365470';
 
 var ice_shadow = 'inset 0px 0px 20px -6px #365470';
@@ -122,16 +125,23 @@ function checkSize(block, iblock, readmore, ish) {
     // var h1 = block.prop('offsetHeight');
     var h2 = block.prop('scrollHeight');
 
+
+
+
+
     // console.log("blockHeight:");
     // console.log(h1);
     // console.log(h2);
 
     if (h1 < h2) {
-        collapseBlock(block, iblock, readmore, ish);
+        collapseBlock(block, iblock, readmore);
+        // console.log('h1, h2:');
+        // console.log([h1, h2]);
+        // console.log(iblock);
     }
 
     else {
-        expandBlock(block, iblock, readmore);
+        expandBlock(block, iblock, readmore, ish);
     }
  
 }
@@ -144,8 +154,23 @@ function checkSizeBlock2() {
     checkSize(block2, iblock2, readmore2, ish2);
 }
 
-$(window).on('resize', checkSizeBlock1);
-$(window).on('resize', checkSizeBlock2);
+
+$(window).resize(function() {
+    clearTimeout(window.resizedFinished);
+    window.resizedFinished = setTimeout(function(){
+        console.log('Resized finished.');
+        checkSize(block1, iblock1, readmore1, ish1);
+        checkSize(block2, iblock2, readmore2, ish2);
+
+    }, 250);
+});
+
+
+
+
+
+// $(window).on('resize', checkSizeBlock1);
+// $(window).on('resize', checkSizeBlock2);
 
 // $(window).on('load', initScroll);
 
@@ -222,6 +247,7 @@ function collapseBlock(block, iblock, readmore) {
         
         // iblock.css('color', 'red');
         iblock.mCustomScrollbar("destroy");
+        console.log("destroyed")
         // iblock.removeClass('mCustomScrollbar');
         // iblock.addClass('mCS_disabled');
 
