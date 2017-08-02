@@ -55,6 +55,8 @@
     
     <!-- // document.getElementById("jupiter-live").currentTime = 30 -->
 
+    <base target="_blank">
+
 
 </head>
 
@@ -278,7 +280,7 @@
     <!-- ##########   PENETRATION   ########## -->
 
     <!-- <section class="black" style="border: solid 1px green;"> -->
-    <section class="black top-offset">
+    <section class="black top-offset text-center">
 
 
             <div class="row">
@@ -329,15 +331,16 @@
 
                 <p>With desired tangential velocities at the endings of the tether, its length will exceed several hundreds of kilometers. Considering a range of issues connected with deployment of such long tether in Low Earth Orbit and significant time, needed to reach the final angular velocity, best solution is to accelerate the tether's revolution during the interplanetary flight phase.</p>
 
-                <p>The angular acceleration can be provided by a pair of ion thrusters [https://en.wikipedia.org/wiki/Ion_thruster] that will start working at the very beginning of the passive interplanetary flight, till reaching desired velocity on the approach to the Jovian System. The interplanetary flight will take up to 6-7 years, considering selection of an efficient trajectory with multiple <a href="https://en.wikipedia.org/wiki/Gravity_assist">gravity assist</a> (GA) maneuvers near Earth (EGA) and Venus (VGA). Similar trajectories have been selected for all <a href="https://en.wikipedia.org/wiki/List_of_missions_to_the_outer_planets">spacecraft that traveled to outer planets</a> and beyond, including Voyagers, Gallileo, Cassini, Juno, as well as for the the upcoming <a href="https://en.wikipedia.org/wiki/Europa_Clipper">flyby mission to Europa</a>.</p>
+                <p>The angular acceleration can be provided by a pair of <a href="https://en.wikipedia.org/wiki/Ion_thruster">ion thrusters</a> that will start working at the very beginning of the passive interplanetary flight, till reaching desired velocity on the approach to the Jovian System. The interplanetary flight will take up to 6-7 years, considering selection of an efficient trajectory with multiple <a href="https://en.wikipedia.org/wiki/Gravity_assist">gravity assist</a> (GA) maneuvers near Earth (EGA) and Venus (VGA). Similar trajectories have been selected for all <a href="https://en.wikipedia.org/wiki/List_of_missions_to_the_outer_planets">spacecraft that traveled to outer planets</a> and beyond, including Voyagers, Gallileo, Cassini, Juno, as well as for the the upcoming <a href="https://en.wikipedia.org/wiki/Europa_Clipper">flyby mission to Europa</a>.</p>
 
 
                 <p>Such long time of the flight is just enough for a pair of ion thrusters to accelerate the tether to the desired angular velocity. The thrusters will be mounted on two separate modules on opposite sides of the tether. One of them consists of the Europa lander and kinetic ice penetration assets (optionally). Another - is an empty rocket's upper stage that will be thrown away into a deep space after tether release on the approach to Europa.</p>
 
                 <div id="trajectory-scheme-wrap" class="text-center">
                     <img src="img/Clipper_trajectory_contrast.png" class="small-img">
+                    <div class="img-title">Possible trajectory for the Europa Multiple Flyby Mission</div>
                 </div>
-                <div class="img-title">Possible trajectory for the Europa Multiple Flyby Mission</div>
+                <!-- <div class="img-title">Possible trajectory for the Europa Multiple Flyby Mission</div> -->
 
                 <p>Ion thrusters will be fed from two power sources: lander's radioisotope generator and solar pannels, mounted on the rocket's upper stage. Being an extremely efficient, ion thrusters will slowly accumulate the portion of input energy into the tether's rotation that finally will be shared between two spacecraft modules at the moment of tether release.</p>
 
@@ -426,25 +429,37 @@
             <h2>Spacecraft layout</h2>
         </div>
 
-        <div class="row">
+<!--         <div class="row">
             <div class="container double-col">
 
-                <p class="big-first block-p">Two spacecraft modules, which are represented by the booster (1st module) and the lander (2nd module), along with the tether that connects them, form the core of the interplanetary spacecraft. At the moment of launch from Earth these modules are assembled in a single piece and the tether is reeled on the spool that is placed between the modules.</p>
+                <p class="big-first">Two spacecraft modules, which are represented by the booster (1st module) and the lander (2nd module), along with the tether that connects them, form the core of the interplanetary spacecraft. At the moment of launch from Earth these modules are assembled in a single piece and the tether is reeled on the spool that is placed between the modules.</p>
                 
-                <p class="block-p">The booster, is a modified version of Centaur rocket stage that utilizes high-impulse cryogenic components: liquid oxygen and liquid hydrogen. It will accelerate the spacecraft to reach the required Earth escape velocity. After its end of work the booster will not separate from the spacecraft, but will serve as a counterweight in the tethered system. For these reasons it will be equipped with ion thrusters to produce lateral impulse and folding solar panels to provide the energy for thrusters.</p>
+                <p>The booster, is a modified version of Centaur rocket stage that utilizes high-impulse cryogenic components: liquid oxygen and liquid hydrogen. It will accelerate the spacecraft to reach the required Earth escape velocity. After its end of work the booster will not separate from the spacecraft, but will serve as a counterweight in the tethered system. For these reasons it will be equipped with ion thrusters to produce lateral impulse and folding solar panels to provide the energy for thrusters.</p>
 
             </div>
+        </div> -->
+
+        <div class="row underice-row top-offset">
+        <!-- <div class="container"> -->
+            <div class="col-md-6 violet-block">
+                <p class="big-first">Two spacecraft modules, which are represented by the booster (1st module) and the lander (2nd module), along with the tether that connects them, form the core of the interplanetary spacecraft. At the moment of launch from Earth these modules are assembled in a single piece and the tether is reeled on the spool that is placed between the modules.</p>
+            </div>
+
+            <div class="col-md-6 violet-block">
+                <p>The booster, is a modified version of Centaur rocket stage that utilizes high-impulse cryogenic components: liquid oxygen and liquid hydrogen. It will accelerate the spacecraft to reach the required Earth escape velocity. After its end of work the booster will not separate from the spacecraft, but will serve as a counterweight in the tethered system. For these reasons it will be equipped with ion thrusters to produce lateral impulse and folding solar panels to provide the energy for thrusters.</p>
+            </div>
+        <!-- </div> -->
         </div>
 
 
         <div class="row text-center">
             <div class="img-container">
                 <div class="col-md-5 col-md-offset-1">
-                    <img src="img/SC_layout_T.png" class="img-center">
+                    <img src="img/SC_layout_T.png" class="img-center" id="spacecraft">
                 </div>
 
                 <div class="col-md-5">
-                    <img src="img/Payload_layout_T.png" class="img-center">
+                    <img src="img/Payload_layout_T.png" class="img-center" id="payload">
                 </div>
             </div>
         </div>
@@ -463,7 +478,7 @@
 
                 <div class="text-center">
                     <div class="img-container">
-                        <img src="img/AUV_in_lander_layout.png" class="img-center">
+                        <img src="img/AUV_in_lander_layout.png" class="img-center" id="auv-packed">
                     </div>
                 </div>
             </div>
@@ -503,7 +518,7 @@
                     <!-- <div id="spin-scheme-wrap"> -->
                     <div id="snake-wrap">
                     <!-- <div class="container"> -->
-                        <img src="img/AUV_horizontal_layout_W.png" id="img-worm">
+                        <img src="img/AUV_horizontal_layout_W.png" id="img-worm" alt="Iceworm Europa Penetrator Cryobot">
                         <div class="img-title">
                             Iceworm - mobile autonomous underice/underwater vehicle
                         </div>
@@ -520,7 +535,7 @@
                             <!-- <div class="r-img-wrap-left"> -->
                             <!-- <div class="r-img-wrap"> -->
                                 <h4>Head module</h4>
-                                <img src="img/RR-head-module.png" class="img-center r-img r-img-left">
+                                <img src="img/RR-head-module.png" class="img-center r-img r-img-left" alt="Iceworm Europa Probe">
                             <!-- </div> -->
                             <!-- </div> -->
                         </div>
@@ -529,7 +544,7 @@
                             <!-- <div class="img-container"> -->
                             <!-- <div class="r-img-wrap"> -->
                                 <h4>Microdrone module</h4>
-                                <img src="img/RR-microdrone-module.png" class="img-center r-img r-img-center">
+                                <img src="img/RR-microdrone-module.png" class="img-center r-img r-img-center" alt="Iceworm Europa Probe">
                             <!-- </div> -->
                         </div>
 
@@ -538,7 +553,7 @@
                             <!-- <div class="r-img-wrap-right"> -->
                             <!-- <div class="r-img-wrap"> -->
                                 <h4>Tail module</h4>
-                                <img src="img/RR-tail-module.png" class="img-center r-img r-img-right">
+                                <img src="img/RR-tail-module.png" class="img-center r-img r-img-right" alt="Iceworm Europa Probe">
                             <!-- </div> -->
                             <!-- </div> -->
                         </div>
@@ -549,15 +564,15 @@
             <div class="row">
                 <div class="container double-col">
                     
-                    <p class="block-p">The Iceworm is a prototype of a robotic probe that will be delivered to the Europa surface by the EDEM spacecraft's landing module. It consists of four modules with octagonal section, connected by flexible junctions, capable of bending into the U shape. This allows the AUV to be compactly packed inside the lander with high packing density.</p>
+                    <p>The Iceworm is a prototype of a robotic probe that will be delivered to the Europa surface by the EDEM spacecraft's landing module. It consists of four modules with octagonal section, connected by flexible junctions, capable of bending into the U shape. This allows the AUV to be compactly packed inside the lander with high packing density.</p>
 
-                    <p class="block-p">The most valuable payload of the Iceworm and the whole mission – is a chemical and biological micro laboratory, placed in the head of the AUV. Its frontal facet is equipped with powerful LED light, two optical cameras, sonar and infrared sensor. In order to be able to grab specimens, first module of the Iceworm is equipped with two robotic arms, capable of delivering samples into the vaults of the inner laboratory. These vaults are represented by the number of drawers of different sizes placed on side facets of the head module.</p>
+                    <p>The most valuable payload of the Iceworm and the whole mission – is a chemical and biological micro laboratory, placed in the head of the AUV. Its frontal facet is equipped with powerful LED light, two optical cameras, sonar and infrared sensor. In order to be able to grab specimens, first module of the Iceworm is equipped with two robotic arms, capable of delivering samples into the vaults of the inner laboratory. These vaults are represented by the number of drawers of different sizes placed on side facets of the head module.</p>
 
-                    <p class="block-p">Second module - is responsible for motion control. Here the most part of <a href="https://en.wikipedia.org/wiki/Underwater_thruster">underwater thrusters</a> are placed: two lateral, with similar set installed in the tail module, and two longitudinal. Last ones, in combination with water pumps in the tail module are responsible for longitudinal motion of the AUV.</p> 
+                    <p>Second module - is responsible for motion control. Here the most part of <a href="https://en.wikipedia.org/wiki/Underwater_thruster">underwater thrusters</a> are placed: two lateral, with similar set installed in the tail module, and two longitudinal. Last ones, in combination with water pumps in the tail module are responsible for longitudinal motion of the AUV.</p> 
 
-                    <p class="block-p">The four pieces of folding rotary hydrodynamic surfaces in the control module, complemented by the similar set in the tail module, allow to perform efficient maneuvers underwater. In combination with flexible inter-module junctions they can be used for executing snaky movements to complement or replace the propulsion function of the longitudinal thrusters and tail pumps.</p>
+                    <p>The four pieces of folding rotary hydrodynamic surfaces in the control module, complemented by the similar set in the tail module, allow to perform efficient maneuvers underwater. In combination with flexible inter-module junctions they can be used for executing snaky movements to complement or replace the propulsion function of the longitudinal thrusters and tail pumps.</p>
 
-                    <p class="block-p">Another important purpose of the second module - is to host four microdrones. These satellites are crucial for solving risky tasks and grabbing tiny samples of materials. They can operate autonomously, or via the power cables. Microdrones are equipped with small robotic hands and can efficiently maneuver in water using a set of tiny folding and rotary thrusters. They are also equipped with micro-sensors and due to the small size of 0.3 – 0.4 m (12-16 inches) in length can take samples from caves and other types of vaults in the sea floor.</p>
+                    <p>Another important purpose of the second module - is to host four microdrones. These satellites are crucial for solving risky tasks and grabbing tiny samples of materials. They can operate autonomously, or via the power cables. Microdrones are equipped with small robotic hands and can efficiently maneuver in water using a set of tiny folding and rotary thrusters. They are also equipped with micro-sensors and due to the small size of 0.3 – 0.4 m (12-16 inches) in length can take samples from caves and other types of vaults in the sea floor.</p>
 
                 </div>
             </div>
@@ -606,7 +621,7 @@
                 <!-- </div> -->
                 <div class="container text-center">
                 <!-- <div class="img-container"> -->
-                    <img src="img/Dive_gloom.png" class="img-center" id="img-worm2">
+                    <img src="img/Dive_gloom.png" class="img-center" id="img-worm2" alt="Iceworm Europa Penetrator Cryobot">
                 <!-- </div> -->
                 </div>
             </div>
@@ -628,7 +643,7 @@
             </div>
 
             <div class="widerows">
-                <img src="img/bottom_vector4K_smoke.png" id="bottom" class="locked">
+                <img src="img/bottom_vector4K_smoke.png" id="bottom" class="locked" alt="Europa Ocean Bottom Alien Life">
             </div>
 
         <!-- </div> -->
@@ -647,8 +662,6 @@
             <div class="container top-offset text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>Contact</h2>
-                    <!-- <p>If you are interested in details or willing to help the project, please feel free to write us!</p> -->
-
                 </div>
             </div>
 
@@ -667,7 +680,7 @@
 
 
             <div class="row top-offset-small">
-                <div class="container text-center">
+                <div class="container text-center" id="donate">
                     <!-- <div class="img-containerq text-centerq"> -->
                     <!-- <div class="row"> -->
 
@@ -705,8 +718,8 @@
             </div>
 
 
-            <div class="container top-offset-small">
-                <div class="row" id="donate">
+            <div class="container top-offset">
+                <div class="row" id="donate-text">
                     <div class="col-lg-10 col-lg-offset-1">
                         <p>We need your support, in first place - to make it possible for us to present the paper about our project on the International Astronautical Congress that will take place in Adelaide, Australia from 25 – 29 September 2017, and, secondly - to appreciate the effort that has been made already to develop the concept of EDEM and work through its details.</p>
                     </div>
@@ -751,6 +764,7 @@
     <div id="contact-area" class="top-offset">
 
         <div class="container contact-container">
+        <p>If you are interested in details or willing to help the project, please feel free to write us!</p>
             <form method="post" action="https://formspree.io/keenon3d@gmail.com" id="fff">
                 <div class="row contact-row">
 

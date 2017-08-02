@@ -58,6 +58,7 @@ a {
   /*color: #42DCA3;*/
   /*color: #7acffb;*/
   color: #8cd8ff;
+  color: #a4d1f8;
   /*font-style: italic;*/
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -65,9 +66,11 @@ a {
 }
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
   /*color: #1d9b6c;*/
-  color: #6dc5f3;
+  /*color: #6dc5f3;*/
+  color: #a4d1f8;
+
   /*color: red;*/
 }
 
@@ -119,6 +122,8 @@ canvas {
 
 section {
   color: #aebdcf;
+  color: #a6b5c8;
+  color: #97a7ba;
 }
 
 .row {
@@ -138,7 +143,8 @@ section {
 }
 
 .block-p {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: flex;
 }
 
 .ice-content {
@@ -196,6 +202,18 @@ section {
   -moz-column-gap: 10vw;
   column-gap: 10vw;
 
+/*  -webkit-perspective:1;
+
+  -moz-column-fill: balance;
+       column-fill: balance;
+
+       -webkit-column-break-inside: avoid;
+-webkit-backface-visibility: hidden;
+
+transform: translateZ(0);*/
+
+  /*display: flex;*/
+
   /*column-fill: initial;*/
 
   /*  
@@ -206,6 +224,17 @@ section {
 
 }
 
+
+/* Fix for unbalanced top alignment in Chrome */
+
+/*.double-col > * {
+  -webkit-column-break-inside: avoid;
+  column-break-inside: avoid;
+
+   display: inline-block;
+  width: 100%;
+}
+*/
 .enlarged p {
   font-size: 1.5em;
 }
@@ -232,6 +261,8 @@ section {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+    /*display: flex;*/
+    /*-webkit-perspective:1;*/
   }
 
 }
@@ -239,6 +270,7 @@ section {
 @media(min-width: 1200px) {
   .block-p {
     display: inline-block;
+    display: block;
   }
 }
 
@@ -247,98 +279,6 @@ section {
     /*display: inline-block;*/
     width: 80%;
     padding: 5vw;
-  }
-}
-
-
-
-/*  ============   CONTACT   ===========*/
-
-
-#contact-area {
-  width: 100%;
-  /*background-color: #011016;*/
-  /*background-color: #4f6176;*/
-  /*background: #273442;*/
-  background: #1e2b3a;
-  box-shadow: #061220 0px 10px 15px -5px inset;
-
-}
-
-.edem-contact {
-  /*background-color: #111111;*/
-  background: #aebdcf;
-  color:black;
-  border-radius: 4px;
-  padding: 0.5em;
-}
-
-.edem-input {
-  background: #aebdcf;
-  border-radius: 4px;
-  min-width: 300px;
-  line-height: 30px;
-  margin: 1em;
-  padding: 0.5em;
-  color: black;
-  border: solid 1px darkgrey;
-}
-
-#send-msg {
-  margin: 1em;
-  height: 40px;
-  min-width: 300px;
-  color: #aebdcf;
-  color: black;
-  color: white;
-  border: 0;
-  border-radius: 4px;
-  line-height: 30px;
-  font-size: 1.2em;
-  background: -webkit-linear-gradient(#2a9ae1, #125e8f);
-  background: linear-gradient(#2a9ae1, #125e8f);
-
-}
-
-#send-msg:hover {
-  background: -webkit-linear-gradient(#52b1ed, #2d73a0);
-  background: linear-gradient(#52b1ed, #2d73a0);
-}
-
-#message {
-  width: 90%;
-  min-height: 220px; 
-  margin: 2em;
-  border: solid 1px darkgrey;
-}
-
-.input-container {
-  width: 90%;
-  min-height: 200px; 
-  margin: 2em;
-}
-
-.contact-row {
-/*  margin-top: 3em;
-  padding-top: 3em;*/
-  padding-bottom: 4em;
-}
-
-.contact-container hr {
-  /*height: 5px;*/
-  /*border: 2px solid #121c23;*/
-  border: 0;
-  height: 3px; 
-  /*background: #333; */
-  background-image: linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a); 
-  background-image: -webkit-linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a);
-}
-
-@media (min-width: 768px) {
-  .contact-container {
-    width: 80%;
-    text-align: center;
-    display: block;
   }
 }
 
@@ -771,6 +711,13 @@ video#jupiter-live {
   -o-background-size: cover;*/
 }
 
+#ice a {
+
+  color: #437e9d;
+  columns: #3a7ea2;
+  color: #2e7498;
+}
+
 #about {
   width: 95%;
   color: #365470;
@@ -1061,12 +1008,14 @@ video#jupiter-live {
 }
 
 .underice-row {
-  padding-left: 2vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
   padding-bottom: 2vw;
   padding-top: 0;
   /*TRY REMOVE THIS TWO:*/
-  margin: 0;
-  width: 100%;
+/*  margin: 0;
+  width: 100%;*/
+  display: block;
 }
 
 
@@ -1150,6 +1099,11 @@ video#jupiter-live {
 
 /*   ===========   VIOLET   ============   */
 
+.violet-block {
+  padding: 5vw;
+  padding-bottom: 0;
+  padding-top: 0;
+}
 
 #underblack {
   background-color: black;
@@ -1159,6 +1113,10 @@ video#jupiter-live {
 
 #violet {
   background: rgb(52, 0, 131);
+}
+
+#spacecraft, #payload, #auv-packed {
+  max-width: 600px;
 }
 
 #trio-img {
@@ -1206,14 +1164,14 @@ video#jupiter-live {
 
 #img-worm {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 5vw;
   padding-bottom: 2em;
 }
 
 #img-worm2 {
   width: 80%;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 5vw;
 }
 
@@ -1225,6 +1183,8 @@ video#jupiter-live {
 #drone-pics {
   margin-top: -3em;
 }
+
+
 
 
 #descent {
@@ -1347,6 +1307,7 @@ ul.banner-social-buttons {
 
 footer {
   /*padding: 0;*/
+  border: transparent solid 0px;
   padding-top: 10px;
   padding-bottom: 30px;
   background: #1e2b3a;
@@ -1356,6 +1317,7 @@ footer p {
   font-size: 1.1em;
   color: #aebdcf;
 }
+
 /*::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
@@ -1364,8 +1326,9 @@ footer p {
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);*/
-}
+  background: rgba(255, 255, 255, 0.2);
+}*/
+
 img::selection {
   background: transparent;
 }
@@ -1377,6 +1340,13 @@ body {
 }
 
 /*------Donation button BTCOIN------*/
+
+#donate-text p {
+  font-size: 1.4em;
+}
+
+
+
 
 .donation-container {
   /*border: solid red 1px;*/
@@ -1505,17 +1475,114 @@ input::-moz-selection{
 
 @media (max-width: 992px) {
    form {
-  margin-bottom: 100px;
-}
-   .reg {
-  margin-bottom: 100px;
-}
-   .pop {
+    margin-bottom: 100px;
+  }
+  .reg {
+    margin-bottom: 100px;
+  }
+  .pop {
     position: absolute;
     margin-top: -80px;
+  }
 }
 /*------EDnd donation button BTCOIN------*/
 
+
+
+
+/*  ============   CONTACT   ===========*/
+
+
+#contact-area {
+  width: 100%;
+  /*background-color: #011016;*/
+  /*background-color: #4f6176;*/
+  /*background: #273442;*/
+  background: #1e2b3a;
+  box-shadow: #061220 0px 15px 20px -15px inset;
+
+}
+
+#contact-area p {
+  color: #aebdcf;
+}
+
+.edem-contact {
+  /*background-color: #111111;*/
+  background: #aebdcf;
+  color:black;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+.edem-input {
+  background: #aebdcf;
+  border-radius: 4px;
+  min-width: 300px;
+  line-height: 30px;
+  margin: 1em;
+  padding: 0.5em;
+  color: black;
+  border: solid 1px darkgrey;
+}
+
+#send-msg {
+  margin: 1em;
+  height: 40px;
+  min-width: 300px;
+  color: #aebdcf;
+  color: black;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  line-height: 30px;
+  font-size: 1.2em;
+  background: -webkit-linear-gradient(#2a9ae1, #125e8f);
+  background: linear-gradient(#2a9ae1, #125e8f);
+
+}
+
+#send-msg:hover {
+  background: -webkit-linear-gradient(#52b1ed, #2d73a0);
+  background: linear-gradient(#52b1ed, #2d73a0);
+}
+
+#message {
+  width: 90%;
+  min-height: 220px; 
+  margin: 2em;
+  border: solid 1px darkgrey;
+}
+
+.input-container {
+  width: 90%;
+  min-height: 200px; 
+  margin: 2em;
+}
+
+.contact-row {
+/*  margin-top: 3em;
+  padding-top: 3em;*/
+  padding-bottom: 4em;
+}
+
+.contact-container hr {
+  /*height: 5px;*/
+  /*border: 2px solid #121c23;*/
+  border: 0;
+  height: 3px; 
+  /*background: #333; */
+  background-image: linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a); 
+  background-image: -webkit-linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a);
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    width: 80%;
+    text-align: center;
+    display: block;
+  }
+}
 
 
 
