@@ -13,6 +13,10 @@ document.getElementById('ice-block2').state = 'expanded';
 $('#ice-block1').state = 'expanded';
 $('#ice-block2').state = 'expanded';
 
+// $('.edem-input').reset();
+$('.edem-input').val('');
+$('#message').val('');
+
 
 function initScroll() {
 
@@ -290,45 +294,15 @@ $('#readmore-ib2').click(function() {
 });
 
 
-// (function($){
-//     $(window).on("load",function(){
-
-//         $("#ib1").mCustomScrollbar();
-//         $("#ib2").mCustomScrollbar();
-
-//         $('#ib1').mCustomScrollbar("disable", true);
-//         $('#ib2').mCustomScrollbar("disable", true);
-        
-
-//         $("#readmore-ib1").click(function(e){
-//             e.preventDefault();
-//             var $this = $(this),
-//                 rel = $this.attr("rel"),
-//                 el = $("#ib1"),
-
-//             switch(rel){
-
-//                 if(el.hasClass("mCS_disabled")){
-//                     el.mCustomScrollbar("update");
-//                 }else{
-//                     el.mCustomScrollbar("disable",true);
-//                 }
-//                 break;
-//             }
-//         });
-        
-//     });
-// })(jQuery);
-
-
 
 /*------Donation button BTCOIN------*/
 
 /*------Open by click button and close by x------*/
 
-$(window).on('load', function() {
+// $(window).on('load', function() {
+$(document).ready(function() {
 
-    $("button").click(function() {
+    $("#coin-btn").click(function() {
         $(".pop").fadeIn(300);
     });
 
@@ -336,26 +310,11 @@ $(window).on('load', function() {
         $(".pop").fadeOut(300);
     });
 
-    $('#wallet').each(function() { this.reset() });
-
-
- // $("#wallet").keypress(function(ev){
- //      var value = "3NojDmjzn4hxV1GuaXNZX5HxwKBjz4Y9kK";
- //      var tval = this.value;
- //      var c = ev.charCode || ev.keyCode;
- //      this.selectionStart = this.selectionEnd = this.value.length;
- //      if (tval.length == value.length && c == 8){
- //           ev.preventDefault();
- //      }
- //      this.value = value + tval.substring(value.length);
- // });
-
-
 });
 
 
 
-//     $(document).ready(function() {
+//  $(document).ready(function() {
 //   $("button").click(function() {
 //     $(".pop").fadeIn(300);
 //   });
@@ -372,8 +331,6 @@ $("#wallet").focus(function(){
         this.select();
     }
 });
-
-
 
 
 /*------Eng donation button BTCOIN------*/
