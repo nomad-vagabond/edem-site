@@ -20,6 +20,19 @@
     <title>Europa Direct Encounter Mission</title>
     <link rel="icon" href="img/edem-icon-32.png">
 
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Preloader fade out -->
+    <script>
+        $(window).on('load', function () {
+        var $preloader = $('#page-preloader'),
+            $loader   = $preloader.find('.loader');
+        $loader.delay(4000).fadeOut();
+        $preloader.delay(4500).fadeOut('slow');
+    });
+    </script>
+
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
@@ -39,6 +52,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <!-- <link href="css/coin.css" rel="stylesheet"> -->
+    <link href="css/preloader.css" rel="stylesheet">
 
 
     
@@ -59,11 +73,28 @@
 
     <base target="_blank">
 
-
 </head>
+
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<!-- ##########  PRELOADER  ##########  -->
+    <div id="page-preloader">
+        <div class="loader">
+            <div class="orbital">
+                <div class="io"></div>
+            </div>
+            <div class="orbital_2">
+                <div class="europa"></div>
+            </div>
+            <div class="orbital_3">
+                <div class="ganymede"></div>
+            </div>
+            <div class="orbital_4">
+                <div class="callisto"></div>
+            </div>
+        </div>
+    </div>
 
 <!-- ##########   NAVIGATION   ########## -->
 
@@ -800,8 +831,6 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
