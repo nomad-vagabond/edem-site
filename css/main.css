@@ -834,7 +834,7 @@ video#jupiter-live {
   padding-right: 2em;*/
 
   /*height: 30vw;*/
-  height: 60vw;
+  height: 65vw;
   /*height: 85%;*/
   /*margin-top: 1em;*/
   /*margin-bottom: 1em;*/
@@ -852,7 +852,7 @@ video#jupiter-live {
 */
 
 .block2 {
-  margin-top: -15em;
+  margin-top: -20em;
 }
 
 
@@ -913,6 +913,8 @@ video#jupiter-live {
 
 
 
+
+
 @media (max-width: 767px) {
   #surface {
     bottom: 0;
@@ -942,6 +944,10 @@ video#jupiter-live {
 
 }
 
+
+
+
+
 @media (min-width: 767px) {
   .ice-content {
     padding-top: 20vw;
@@ -964,7 +970,7 @@ video#jupiter-live {
     border-radius: 8px;
     padding-top: 1em;
     box-shadow: 0 0 50px #9aadbe;
-    height: 40vw;
+    height: 45vw;
     border: solid 1px #879eaf;
   }
 
@@ -975,7 +981,7 @@ video#jupiter-live {
 
   .block2 {
     margin-top: 0;
-    height: 50vw;
+    height: 55vw;
   }
 
 }
@@ -987,6 +993,29 @@ video#jupiter-live {
   }
 }
 
+@media (max-width: 767px) {
+
+  .ice-block {
+      margin-top: 15vw;
+      height: 70vw;
+  }
+
+  .ice-block.block2 {
+      margin-top: 5vw;
+      height: 80vw;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .ice-block {
+      /*margin-top: 50px;*/
+      margin-top: 5vw;
+  }
+
+}
 
 /*   ==========   UNDERICE   ==========    */
 
