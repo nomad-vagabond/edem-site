@@ -253,7 +253,12 @@ transform: translateZ(0);*/
   border: solid red 1px;
 }
 
-
+.locked {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
 
 
 
@@ -859,7 +864,8 @@ video#jupiter-live {
 */
 
 .block2 {
-  margin-top: -20em;
+  /*margin-top: -20em;*/
+  margin-top: -30vw;
 }
 
 
@@ -971,10 +977,16 @@ video#jupiter-live {
 
 }
 
-@media (min-width: 1200px) {
-  .ice-block {
-    padding-right: 5vw;
-    padding-left: 5vw;
+@media (min-width: 1600px) {
+/*  .ice-block {
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
+*/
+  .ice-over {
+    padding-right: 3vw;
+    padding-left: 3vw;
+
   }
 }
 
@@ -1480,14 +1492,25 @@ body {
 }
 
 input::selection {
-  background: lightblue;
+  background: #73abcf;
+  /*border-radius: 2px;*/
 }
 
 input::-moz-selection{
-  background: lightblue;
+  background: #73abcf;
+  /*border-radius: 2px;*/
+}
+
+textarea::selection {
+  background: #73abcf;
+  /*border-radius: 2px;*/
 }
 
 
+textarea::-moz-selection{
+  background: #73abcf;
+  /*border-radius: 2px;*/
+}
 
 .pop > span {
   cursor: pointer;
@@ -1599,6 +1622,12 @@ input::-moz-selection{
   margin-right: 2em;*/
   /*margin-bottom: 2em;*/
   border: solid 1px darkgrey;
+}
+
+
+
+#message:select {
+  background-color: green;
 }
 
 .input-container {
