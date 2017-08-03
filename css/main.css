@@ -143,8 +143,8 @@ section {
 }
 
 .block-p {
-  /*display: inline-block;*/
-  display: flex;
+  display: inline-block;
+  /*display: flex;*/
 }
 
 .ice-content {
@@ -181,6 +181,7 @@ section {
 .big-img {
   padding: 3em;
   width: 100%; 
+  max-width: 1100px;
 }
 
 .small-img {
@@ -270,7 +271,7 @@ transform: translateZ(0);*/
 @media(min-width: 1200px) {
   .block-p {
     display: inline-block;
-    display: block;
+    /*display: block;*/
   }
 }
 
@@ -713,8 +714,8 @@ video#jupiter-live {
 
 #ice a {
 
-  color: #437e9d;
-  columns: #3a7ea2;
+  /*color: #437e9d;*/
+  /*columns: #3a7ea2;*/
   color: #2e7498;
 }
 
@@ -728,6 +729,7 @@ video#jupiter-live {
   overflow: hidden;
   direction: ltr; 
 
+
 /*  padding-left: 0;
   padding-right: 0;
   margin-right: 0;
@@ -737,6 +739,7 @@ video#jupiter-live {
 .ice-over {
   overflow: hidden;
   border-radius: 8px;
+  /*border: solid 1px red;*/
   /*border: solid red 1px;*/
 /*  margin-top: 0;
   margin-bottom: 0;
@@ -762,6 +765,7 @@ video#jupiter-live {
   /*box-shadow: inset 0px 0px 20px -6px #365470;*/
   /*background-color: green;*/
   /*z-index: -1;*/
+  /*border: solid red 1px;*/
 }
 
 
@@ -770,6 +774,7 @@ video#jupiter-live {
   margin-left: -3em;
   padding-left: 3em;
   padding-right: 3em;
+  /*border: solid red 1px;*/
 }
 
 #ice-block2 {
@@ -839,6 +844,8 @@ video#jupiter-live {
   /*margin-top: 1em;*/
   /*margin-bottom: 1em;*/
   /*border: solid 1px green;*/
+  padding: 0;
+
 }
 
 .ice-block h2 {
@@ -856,40 +863,6 @@ video#jupiter-live {
 }
 
 
-.ice-block-SSS::-webkit-scrollbar {
-  /* for vertical scrollbars */
-  width: 16px;
-  /* for horizontal scrollbars */
-  height: 16px; 
-  border-radius: 8px;
-}
-
-.ice-block-SSS::-webkit-scrollbar-track {
-  /*background: rgba(0, 0, 0, 0.1);*/
-  /*background: #365470;*/
-  /*background: #245d77;*/
-  background: -webkit-linear-gradient(90deg, #245d77, #365470, #365470, #245d77);
-  background: linear-gradient(90deg, #245d77, #365470, #365470, #245d77);
-  /*border: 4px solid transparent;*/
-  border-radius: 8px;
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-.ice-block-SSS::-webkit-scrollbar-thumb {
-  /*background: rgba(0, 0, 0, 0.5);*/
-  /*background: #99acbd;*/
-  /*background: #879eaf;*/
-
-  /*width: 10px;
-  height: 10px;
-*/ background: -webkit-linear-gradient(90deg, #879eaf, #99acbd, #99acbd, #879eaf);
-  background: linear-gradient(90deg, #879eaf, #99acbd, #99acbd, #879eaf);
-  /*border: 2px solid #66859a; */
-  border: 1px solid #365470; 
-  border-radius: 8px;
-
-}
 
 
 
@@ -900,6 +873,7 @@ video#jupiter-live {
   font-style: italic;
   color: #365470;
   line-height: 2em;
+  padding-right: 1em;
 }
 
 
@@ -909,8 +883,13 @@ video#jupiter-live {
   font-style: italic;
   color: #365470;
   line-height: 2em;
+  padding-right: 1em;
 }
 
+
+#ice-over2 {
+    margin-top: 5vw;
+  }
 
 
 
@@ -928,9 +907,11 @@ video#jupiter-live {
   }
 
   .ice-block {
-      margin-top: 100px;
+      /*margin-top: 100px;*/
       height: 70vw;
   }
+
+
 
   /*.ice-block.block2 {*/
       /*margin-top: 5vw;*/
@@ -961,17 +942,20 @@ video#jupiter-live {
     width: 89%;
   }
 
-  #ib2 {
+/*  #ib2 {
     margin-top: 1em;
-  }
+  }*/
 
   .ice-block {
     background: rgba(164,182,199,0.5);
     border-radius: 8px;
-    padding-top: 1em;
+    /*padding-top: 1em;*/
     box-shadow: 0 0 50px #9aadbe;
     height: 45vw;
     border: solid 1px #879eaf;
+    /*border: solid 1px red;*/
+    padding: 0;
+    overflow: hidden;
   }
 
 /*  .ice-block.block2 {
@@ -980,6 +964,7 @@ video#jupiter-live {
   }*/
 
   .block2 {
+    /*padding-top: 0;*/
     margin-top: 0;
     height: 55vw;
   }
@@ -995,13 +980,22 @@ video#jupiter-live {
 
 @media (max-width: 767px) {
 
+  #ice-over1 {
+    margin-top: 15vw;
+  }
+
+  #ice-over2 {
+    margin-top: 6vw;
+  }
+
+
   .ice-block {
-      margin-top: 15vw;
+      /*margin-top: 15vw;*/
       height: 70vw;
   }
 
   .ice-block.block2 {
-      margin-top: 5vw;
+      /*margin-top: 5vw;*/
       height: 80vw;
   }
 
@@ -1010,12 +1004,20 @@ video#jupiter-live {
 
 @media (max-width: 450px) {
 
-  .ice-block {
+  #ice-over1 {
       /*margin-top: 50px;*/
-      margin-top: 5vw;
+      margin-top: 4vw;
+  }
+
+  #ice-over2 {
+      /*margin-top: 50px;*/
+      margin-top: 2vw;
   }
 
 }
+
+
+
 
 /*   ==========   UNDERICE   ==========    */
 
