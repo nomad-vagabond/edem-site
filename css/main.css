@@ -1547,7 +1547,8 @@ input::-moz-selection{
 .edem-input {
   background: #aebdcf;
   border-radius: 4px;
-  min-width: 300px;
+  max-width: 350px;
+  width: 90%;
   line-height: 30px;
   margin: 1em;
   padding: 0.5em;
@@ -1558,7 +1559,8 @@ input::-moz-selection{
 #send-msg {
   margin: 1em;
   height: 40px;
-  min-width: 300px;
+  max-width: 350px;
+  width: 90%;
   color: #aebdcf;
   color: black;
   color: white;
@@ -1576,17 +1578,33 @@ input::-moz-selection{
   background: linear-gradient(#52b1ed, #2d73a0);
 }
 
+#msg-wrap {
+  /*width: 100%;*/
+/*  margin: 2em;
+    margin-left: 2em;
+  margin-right: 2em;*/
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+}
+
 #message {
-  width: 90%;
+
+  width: 100%;
   min-height: 220px; 
-  margin: 2em;
+/*  margin:0;
+  margin-left: 2em;
+  margin-right: 2em;*/
+  /*margin-bottom: 2em;*/
   border: solid 1px darkgrey;
 }
 
 .input-container {
-  width: 90%;
+  width: 100%;
   min-height: 200px; 
-  margin: 2em;
+  margin:0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .contact-row {
