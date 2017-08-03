@@ -25,12 +25,25 @@
 
     <!-- Preloader fade out -->
     <script>
+
+        // $(document).scrollTop(0);
+
         $(window).on('load', function () {
         var $preloader = $('#page-preloader'),
             $loader   = $preloader.find('.loader');
         $loader.delay(4000).fadeOut();
         $preloader.delay(4500).fadeOut('slow');
-    });
+        $(window).delay(3000).scrollTop(0);
+        });
+
+        // $(window).on('beforeunload', function(){
+        //   $(window).delay(4000);
+        //   $(window).scrollTop(0);
+        // });
+
+    // $(document).ready(function(){
+    //     $(this).scrollTop(0);
+    // });
     </script>
 
     <!-- Bootstrap Core CSS -->

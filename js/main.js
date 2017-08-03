@@ -4,7 +4,9 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
 
 
 var IB1_CLASS = 'expanded';
