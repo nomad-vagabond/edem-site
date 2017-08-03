@@ -58,10 +58,241 @@
     <base target="_blank">
 
 
+<script>
+    $(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $loader   = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+</script>
+
+
 </head>
+
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+<!-- ##########  PRELOADER  ##########  -->
+<div id="page-preloader">
+    <div class="loader">
+        <div class="orbital">
+        <div class="io"></div>
+        </div>
+        <div class="orbital_2">
+        <div class="europa"></div>
+        </div>
+        <div class="orbital_3">
+        <div class="ganymede"></div>
+        </div>
+        <div class="orbital_4">
+        <div class="callisto"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+#page-preloader {
+  background: #000000;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+
+}
+.loader {
+  background: none;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  
+  
+}
+.orbital {
+  background-color: #8E5832;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation: orbital 2s infinite linear;
+  -moz-animation: orbital 2s infinite linear;
+  -o-animation: orbital 2s infinite linear;
+  animation: orbital 2s infinite linear;
+}
+.orbital_2 {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -12px;
+  -webkit-animation: orbital 4s infinite linear;
+  -moz-animation: orbital 4s infinite linear;
+  -o-animation: orbital 4s infinite linear;
+  animation: orbital 4s infinite linear;
+}
+.orbital_3 {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -16px;
+  -webkit-animation: orbital 8.2s infinite linear;
+  -moz-animation: orbital 8.2s infinite linear;
+  -o-animation: orbital 8.2s infinite linear;
+  animation: orbital 8.2s infinite linear;
+}
+
+.orbital_4 {
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -12px;
+  -webkit-animation: orbital 18.8s infinite linear;
+  -moz-animation: orbital 18.8s infinite linear;
+  -o-animation: orbital 18.8s infinite linear;
+  animation: orbital 18.8s infinite linear;
+}
+
+.io {
+  width: 8px;
+  height: 8px;
+  top: -30px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #FFD700;
+
+}
+.europa {
+  width: 7px;
+  height: 7px;
+  top: -70px;
+  position: absolute;
+  border-radius: 50%;
+  background-color:#D7AFA3;
+}
+.ganymede {
+  width: 11px;
+  height: 11px;
+  top: -100px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #8C8C8C;
+}
+.callisto {
+  width: 12px;
+  height: 12px;
+  top: -150px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #7F6F60;
+
+}
+
+
+@keyframes orbital {
+  to {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes orbital {
+  to {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes orbital {
+ to {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes orbital {
+  to {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes orbital-inicial {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-o-keyframes orbital-inicial {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-moz-keyframes orbital-inicial {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+@-webkit-keyframes orbital-inicial {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
+
+
+</style>
 
 <!-- ##########   NAVIGATION   ########## -->
 
