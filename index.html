@@ -21,18 +21,15 @@
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
+    <!-- Preloader fade out -->
     <script>
         $(window).on('load', function () {
         var $preloader = $('#page-preloader'),
             $loader   = $preloader.find('.loader');
-        $loader.fadeOut();
-        $preloader.delay(350).fadeOut('slow');
+        $loader.delay(4000).fadeOut();
+        $preloader.delay(4500).fadeOut('slow');
     });
     </script>
-
-
-
-    
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -74,10 +71,6 @@
 
     <base target="_blank">
 
-
-
-
-
 </head>
 
 
@@ -87,20 +80,19 @@
     <div id="page-preloader">
         <div class="loader">
             <div class="orbital">
-            <div class="io"></div>
+                <div class="io"></div>
             </div>
             <div class="orbital_2">
-            <div class="europa"></div>
+                <div class="europa"></div>
             </div>
             <div class="orbital_3">
-            <div class="ganymede"></div>
+                <div class="ganymede"></div>
             </div>
             <div class="orbital_4">
-            <div class="callisto"></div>
+                <div class="callisto"></div>
             </div>
         </div>
     </div>
-
 
 <!-- ##########   NAVIGATION   ########## -->
 
