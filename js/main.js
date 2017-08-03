@@ -17,6 +17,24 @@ $('#ice-block2').state = 'expanded';
 $('.edem-input').val('');
 $('#message').val('');
 
+// Disable cintext menu for elements:
+
+$("body").on("contextmenu", "#ice", function(e) {
+  return false;
+});
+
+$("body").on("contextmenu", "#surface-wrap", function(e) {
+  return false;
+});
+
+$("body").on("contextmenu", ".page-scroll", function(e) {
+  return false;
+});
+
+$("body").on("contextmenu", "#bottom-wrap", function(e) {
+  return false;
+});
+
 
 function initScroll() {
 

@@ -711,6 +711,7 @@ video#jupiter-live {
   background-color: #005268;
   background-color: #053f57;
   background-size: 100%;
+  /*pointer-events: none;*/
 /*  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1493,23 +1494,19 @@ body {
 
 input::selection {
   background: #73abcf;
-  /*border-radius: 2px;*/
 }
 
 input::-moz-selection{
   background: #73abcf;
-  /*border-radius: 2px;*/
 }
 
 textarea::selection {
   background: #73abcf;
-  /*border-radius: 2px;*/
 }
 
 
 textarea::-moz-selection{
   background: #73abcf;
-  /*border-radius: 2px;*/
 }
 
 .pop > span {
