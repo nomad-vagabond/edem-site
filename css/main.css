@@ -45,8 +45,9 @@ a {
   color: #8cd8ff;
   color: #a4d1f8;
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
 }
 a:hover,
 a:focus {
@@ -165,12 +166,14 @@ section {
   padding-right: 3vw;
 
   -webkit-column-count: 1;
-  -moz-column-count: 1;
-  column-count: 1;
+     -moz-column-count: 1;
+       -o-column-count: 1;
+          column-count: 1;
 
   -webkit-column-gap: 10vw;
-  -moz-column-gap: 10vw;
-  column-gap: 10vw;
+     -moz-column-gap: 10vw;
+       -o-column-gap: 10vw;
+          column-gap: 10vw;
 
 }
 
@@ -193,16 +196,18 @@ section {
 
 .locked {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+       -o-user-select: none;
+          user-select: none;
   pointer-events: none;
 }
 
 @media (min-width: 992px) {
   .double-col {
     -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+       -moz-column-count: 2;
+         -o-column-count: 2;
+            column-count: 2;
   }
 
 }
@@ -262,8 +267,9 @@ section {
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
+     -moz-transition: background 0.3s ease-in-out;
+       -o-transition: background 0.3s ease-in-out;
+          transition: background 0.3s ease-in-out;
   text-align: center;
 }
 .navbar-custom .nav li a:hover {
@@ -295,8 +301,9 @@ section {
     letter-spacing: 1px;
     background: transparent;
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+       -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+         -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+            transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
@@ -380,11 +387,11 @@ section {
   display: block;
   position: absolute;
   z-index: 100;
-  transition-duration: 0.96s;
   -webkit-transition-duration: 0.96s;
-  -moz-transition-duration: 0.96s;
-  -o-transition-duration: 0.96s;
-  -ms-transition-duration:  0.96s; /* IE9+ */
+     -moz-transition-duration: 0.96s;
+       -o-transition-duration: 0.96s;
+      -ms-transition-duration:  0.96s; /* IE9+ */
+          transition-duration: 0.96s;
 }
 
 .image-up:hover  {
@@ -626,8 +633,8 @@ video#jupiter-live {
   margin: 0;
   padding: 0;
   background: url(../img/ice.jpg) no-repeat top center;
-  background-color: #010405;
-  background-color: #005268;
+  /*background-color: #010405;
+  background-color: #005268;*/
   background-color: #053f57;
   background-size: 100%;
 }
@@ -651,7 +658,11 @@ video#jupiter-live {
 
 .ice-over {
   overflow: hidden;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+       -o-border-radius: 8px;
+          border-radius: 8px;
 }
 
 #ice-shadow1 {
@@ -691,9 +702,13 @@ video#jupiter-live {
 }
 
 .gradient-text {
+  background:         linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
   background: -webkit-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
+  background:    -moz-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
+  background:      -o-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 
@@ -708,7 +723,11 @@ video#jupiter-live {
 
 .ice-block {
   overflow-y: auto;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+       -o-border-radius: 8px;
+          border-radius: 8px;
   height: 65vw;
   padding: 0;
 }
@@ -788,7 +807,11 @@ video#jupiter-live {
 
   .ice-block {
     background: rgba(164,182,199,0.5);
-    border-radius: 8px;
+     -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+         -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+             border-radius: 8px;
     /*padding-top: 1em;*/
     box-shadow: 0 0 50px #9aadbe;
     height: 45vw;
@@ -858,9 +881,10 @@ video#jupiter-live {
 
 #underice {
   background: #053f57;
+  background:         linear-gradient(180deg, rgb(5, 63, 87), rgb(0, 0, 0));
   background: -webkit-linear-gradient(270deg, rgb(5, 63, 87), rgb(0, 0, 0));
-  background: -moz-linear-gradient(270deg, rgb(5, 63, 87), rgb(0, 0, 0));
-  background: linear-gradient(180deg, rgb(5, 63, 87), rgb(0, 0, 0));
+  background:    -moz-linear-gradient(270deg, rgb(5, 63, 87), rgb(0, 0, 0));
+  background:      -o-linear-gradient(180deg, rgb(5, 63, 87), rgb(0, 0, 0)); 
   /*height: 900px;*/
   margin: 0;
   padding: 0;
@@ -893,12 +917,10 @@ video#jupiter-live {
 
 .black-block {
   padding: 5vw;
-  /*padding-bottom: 0;*/
   padding-top: 0;
 }
 
 #velocity-undertext {
-  /*font-size: 18px;*/
   font-size: 1.3em;
 }
 
@@ -968,8 +990,10 @@ video#jupiter-live {
 
 #underblack {
   background-color: black;
-  background: -webkit-linear-gradient(180deg, rgb(0, 0, 0), rgb(52, 0, 131));
-  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(52, 0, 131));
+  background:         linear-gradient( rgb(0, 0, 0), rgb(52, 0, 131));
+  background: -webkit-linear-gradient( rgb(0, 0, 0), rgb(52, 0, 131));
+  background:    -moz-linear-gradient( rgb(0, 0, 0), rgb(52, 0, 131));
+  background:      -o-linear-gradient( rgb(0, 0, 0), rgb(52, 0, 131));
 }
 
 #violet {
@@ -1208,9 +1232,11 @@ body {
   text-align: center;
   vertical-align: center;
   font-style: italic;
-  /*background: #03233A;*/
+  background: #245d77;
+  background:         linear-gradient(#245d77, #011016);
   background: -webkit-linear-gradient(#245d77, #011016);
-  background: linear-gradient(#245d77, #011016);
+  background: -moz-linear-gradient(#245d77, #011016);
+  background: -o-linear-gradient(#245d77, #011016);
   display: block;
   margin: 0 auto;
   margin-top: 2px;
@@ -1220,22 +1246,24 @@ body {
     padding: 3px;
     padding-right: 15px;
   -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
+     -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+       -o-border-radius: 15px;
+          border-radius: 15px;
   border: none;
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
   color: #AEBDC2;
   cursor: pointer;
 }
  .reg:hover {
   opacity: 0.8;
   -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
 }
 .pop {  
   width: 70%;
@@ -1245,23 +1273,23 @@ body {
   display: none;
   position: absolute;
   left: 16%;
-  /*background: #03233A;*/
+  background: #245d77;/* For browsers that do not support gradients */	
+  background:        linear-gradient(#245d77, #011016);
   background: -webkit-linear-gradient(#245d77, #011016);
-  background: linear-gradient(#245d77, #011016);
+  background: -o-linear-gradient(#245d77, #011016);
+  background: -moz-linear-gradient(#245d77, #011016);
   -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
+     -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+       -o-border-radius: 6px;
+          border-radius: 6px;
   padding: 0;
   padding-top: 40px;
 }
 .pop > p {
-  /*padding: 50px 30px 0px 30px;*/
   text-align: center;
   color: #AEBDC2;
   font-size: 18px;
-  /*border: solid red 1px;*/
   padding: 0;
   margin-top: 0;
   margin-bottom: 10px;
@@ -1277,13 +1305,13 @@ body {
   color: black;
   background: white;
   -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+     -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+          border-radius: 3px;
    -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
 }
 
 
@@ -1347,20 +1375,28 @@ textarea::-moz-selection{
 .edem-contact {
   background: #aebdcf;
   color:black;
-  border-radius: 4px;
+   -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+       -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+           border-radius: 4px;
   padding: 0.5em;
 }
 
 .edem-input {
   background: #aebdcf;
-  border-radius: 4px;
+   -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+       -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+           border-radius: 4px;
   max-width: 350px;
   width: 90%;
   line-height: 30px;
   margin: 1em;
   padding: 0.5em;
   color: black;
-  border: solid 1px darkgrey;
+  border: solid 1px #4E4E4E;
 }
 
 #send-msg {
@@ -1372,16 +1408,26 @@ textarea::-moz-selection{
   color: black;
   color: white;
   border: 0;
-  border-radius: 4px;
+   -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+       -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+           border-radius: 4px;
   line-height: 30px;
   font-size: 1.2em;
+  background: #2a9ae1; /* For browsers that do not support gradients */	
+  background:        linear-gradient(#2a9ae1, #125e8f);
   background: -webkit-linear-gradient(#2a9ae1, #125e8f);
-  background: linear-gradient(#2a9ae1, #125e8f);
+  background: -o-linear-gradient(#2a9ae1, #125e8f);
+  background: -moz-linear-gradient(#2a9ae1, #125e8f);
 }
 
 #send-msg:hover {
+  background: #52b1ed; /* For browsers that do not support gradients */	
+  background:         linear-gradient(#52b1ed, #2d73a0);
   background: -webkit-linear-gradient(#52b1ed, #2d73a0);
-  background: linear-gradient(#52b1ed, #2d73a0);
+  background:      -o-linear-gradient(#52b1ed, #2d73a0);
+  background:    -moz-linear-gradient(#52b1ed, #2d73a0);
 }
 
 #msg-wrap {
@@ -1393,7 +1439,7 @@ textarea::-moz-selection{
 #message {
   width: 100%;
   min-height: 220px; 
-  border: solid 1px darkgrey;
+  border: solid 1px #4E4E4E;
 }
 
 #message:select {
@@ -1414,9 +1460,14 @@ textarea::-moz-selection{
 
 .contact-container hr {
   border: 0;
-  height: 3px; 
-  background-image: linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a); 
+  height: 3px;
+  background: #1e2b3a; /* For browsers that do not support gradients */	
+  background-image:         linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a); 
   background-image: -webkit-linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a);
+  background-image:      -o-linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a);
+  background-image:    -moz-linear-gradient(to right, #1e2b3a, #121c23, #1e2b3a);
+
+
 }
 
 @media (min-width: 768px) {
