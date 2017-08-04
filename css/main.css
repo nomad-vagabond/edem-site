@@ -625,7 +625,7 @@ video#jupiter-live {
   height: 140vw;
   margin: 0;
   padding: 0;
-  background: url(../img/ice6.png) no-repeat top center;
+  background: url(../img/ice.jpg) no-repeat top center;
   background-color: #010405;
   background-color: #005268;
   background-color: #053f57;
@@ -911,6 +911,7 @@ video#jupiter-live {
   padding: 0;
   padding-bottom: 2em;
   padding-top: 0.5em;
+  max-width: 800px;
 }
 
 #penetration-scheme{
@@ -991,21 +992,21 @@ video#jupiter-live {
 .r-img-left {
   margin-left: -20%;
   margin-right: -50%;
-  margin-bottom: -50%;
+  margin-bottom: -40%;
   margin-top: -30%;
 }
 
 .r-img-right {
   margin-left: -50%;
   margin-right: -20%;
-  margin-bottom: -50%;
+  margin-bottom: -40%;
   margin-top: -30%;
 }
 
 .r-img-center {
   margin-left: -50%;
   margin-right: -50%;
-  margin-bottom: -50%;
+  margin-bottom: -40%;
   margin-top: -30%;
 }
 
@@ -1013,6 +1014,7 @@ video#jupiter-live {
   padding-top: 0;
   padding-bottom: 5em;
   width: 45vw;
+  max-width: 800px;
 }
 
 #snake-wrap {
