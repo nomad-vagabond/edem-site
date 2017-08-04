@@ -18,12 +18,14 @@
     <meta http-equiv="imagetoolbar" content="no" />
 
     <title>Europa Direct Encounter Mission</title>
-    <link rel="icon" href="img/edem-icon-32.png">
+    <link rel="icon" href="img/edem-icon-ED.png">
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Preloader fade out -->
+
+    <link href="css/preloader.css" rel="stylesheet">
     <script>
 
         // $(document).scrollTop(0);
@@ -65,7 +67,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <!-- <link href="css/coin.css" rel="stylesheet"> -->
-    <link href="css/preloader.css" rel="stylesheet">
+    
 
 
     
@@ -229,7 +231,7 @@
 
 
             <div id="surface-wrap">
-                <img id="surface" src="img/shmat_evropy5.png" align="middle" class="locked">
+                <img id="surface" src="img/shmat_evropy6.png" align="middle" class="locked">
             </div>
 
         </div>
@@ -329,7 +331,7 @@
     <section class="black top-offset text-center">
 
 
-            <div class="row">
+            <div class="row top-offset">
                 <h2>Penetration assets</h2>
             </div>
 
@@ -450,7 +452,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row top-offset">
             <div class="col-md-8 col-md-offset-2">
                 <img src="img/Separation4.png" class="big-img locked">
             </div>
@@ -471,7 +473,7 @@
             </div>
         </div> -->
 
-        <div class="row top-offset-small">
+        <div class="row top-offset">
             <h2>Spacecraft layout</h2>
         </div>
 
@@ -485,7 +487,7 @@
             </div>
         </div> -->
 
-        <div class="row underice-row top-offset">
+        <div class="row underice-row top-offset" id="sc-firstrow">
         <!-- <div class="container"> -->
             <div class="col-md-6 violet-block">
                 <p class="big-first">Two spacecraft modules, which are represented by the booster (1st module) and the lander (2nd module), along with the tether that connects them, form the core of the interplanetary spacecraft. At the moment of launch from Earth these modules are assembled in a single piece and the tether is reeled on the spool that is placed between the modules.</p>
@@ -541,7 +543,7 @@
     <!-- <section id="violet" style="border: solid 1px pink;"> -->
     <section id="violet" class="top-offset">
 
-            <div class="row top-offset">
+            <div class="row top-offset-large">
                 <!-- <div class="col-md-6 underice-block"> -->
                     <h2>Autonomous underice vehicle</h2>
                 <!-- </div> -->
@@ -624,11 +626,11 @@
             </div>
 
             <div class="row" id="drone-pics">
-                <div class="col-md-5 col-md-offset-1">
-                    <img src="img/microauv-H-LEFT.png" class="img-center" alt="Europa Underice Micro Drone AUV">
+                <div class="col-md-5 col-md-offset-1 text-center">
+                    <img src="img/microauv-H-LEFT.png" class="img-center" id="left-drone" alt="Europa Underice Micro Drone AUV">
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-5 text-center">
                     <img src="img/microauv-H-RIGHT.png" class="img-center" id="right-drone" alt="Europa Underice Micro Drone AUV">
                 </div>
             </div>
@@ -650,8 +652,10 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6 underice-block col-md-offset-6">
-                    <p>So when it reaches Europa and gets through the ice…</p>
+                <div class="container">
+                    <div class="col-md-6 underice-block col-md-offset-6">
+                        <p>So when it reaches Europa and gets through the ice…</p>
+                    </div>
                 </div>
             </div>
 
