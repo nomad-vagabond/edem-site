@@ -409,9 +409,11 @@ section {
 
 .image-up, .image-down {
   height: 11vh;
+  /*height: 150px;*/
   border: 0;
   margin: 0;
   padding: 0;
+  /*max-height: 50px;*/
 }
 
 .image-up {
@@ -435,7 +437,9 @@ section {
 
 @media (max-width: 767px) {
   .image-up, .image-down {
-    height: 7vh;
+    /*height: 7vh;*/
+    height: 70px;
+    /*max-height: 50px;*/
   }
   .heading-row {
     margin-bottom: 12vh;
@@ -1409,6 +1413,7 @@ textarea::-moz-selection{
 }
 .qrcode {
   padding: 25px;
+  width: 100%;
 
 }
 
@@ -1541,5 +1546,10 @@ textarea::-moz-selection{
   }
 }
 
-
+@media (max-width: 450px) {
+  .team-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
