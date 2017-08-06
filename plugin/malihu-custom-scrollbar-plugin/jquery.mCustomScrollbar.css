@@ -429,7 +429,7 @@ yx-axis
 
 	.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background-color: #365470; background-color: rgba(54,84,112,0.75); }
 
-	.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background-color: rgba(54,84,112.85); }
+	.mCS-dark.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{ background-color: rgba(54,84,112,0.85); }
 
 	.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 	.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(54,84,112,0.9); }
