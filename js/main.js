@@ -155,10 +155,12 @@ function collapseBlock(block, iblock, readmore) {
     block.state = 'collapsed';
     iblock.css('box-shadow', 'none');
 
-    if (getBrowser() == 'Safari') {
-        block.addClass('solid-text');
-    }
-    else { block.addClass('gradient-text'); }
+    // if (getBrowser() == 'Safari') {
+    //     block.addClass('solid-text');
+    // }
+    // else { block.addClass('gradient-text'); }
+
+    block.addClass('gradient-text');
 
     readmore.text('more...');
 
