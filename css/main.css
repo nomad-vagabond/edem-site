@@ -74,8 +74,8 @@ canvas {
 
 .container-wide {
   width: 100%;
-  padding-left: 2em;
-  padding-right: 2em;
+/*  padding-left: 1em;
+  padding-right: 1em;*/
 }
 
 .img-container {
@@ -258,6 +258,11 @@ section {
 
 /*   ==========   NAVBAR   ==========   */
 
+.nav {
+  padding-right: 2em;
+  padding-left: 1em;
+}
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -269,11 +274,11 @@ section {
   color:  #808080;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
-
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
   outline: none;
+
 }
 .navbar-custom .navbar-brand {
   font-weight: 600;
@@ -830,7 +835,8 @@ video#jupiter-live {
 @media (max-width: 992px) {
 
   #about {
-    width: 89%;
+    width: 100%;
+    /*width: 89%;*/
   }
 
   .ice-block {
@@ -889,18 +895,36 @@ video#jupiter-live {
       height: 80vw;
   }
 
+/*  #about {
+    width: 100%;
+  }*/
+
+  .iceblock-container {
+    padding: 0;
+    margin: 0;
+  }
+
 }
 
 @media (max-width: 450px) {
   #ice-over1 {
       /*margin-top: 50px;*/
+      /*margin: 0;*/
       margin-top: 4vw;
+/*    padding-left: 0;
+    padding-right: 0;*/
   }
 
   #ice-over2 {
       /*margin-top: 50px;*/
       margin-top: 2vw;
   }
+
+
+/*  #ib1, #ib2 {
+    padding-left: 0;
+    padding-right: 0;
+  }*/
 
 }
 
