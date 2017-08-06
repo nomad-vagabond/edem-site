@@ -84,28 +84,17 @@ $(document).ready(collapseNavbar);
 
 var block1 = $('#ice-block1');
 block1.state = 'expanded';
-// block1.ib = $('#ib1');
-// block1.shadow = $('#ice-shadow1');
-// bloack1.button = $('#readmore-ib1');
-
 var iblock1 = $('#ib1');
 iblock1.ish = $('#ice-shadow1');
 var readmore1 = $('#readmore-ib1');
 var ish1 = $('#ice-shadow1');
-// iblock1.cshadow = 'inset 10px 0px 20px -6px #365470';
 
 var block2 = $('#ice-block2');
 block2.state = 'expanded';
-// block2.ib = $('#ib2');
-// block2.shadow = $('#ice-shadow2');
-// bloack2.button = $('#readmore-ib2');
-
-
 var iblock2 = $('#ib2');
 iblock2.ish = $('#ice-shadow2');
 var readmore2 = $('#readmore-ib2');
 var ish2 = $('#ice-shadow2');
-// iblock2.cshadow = 'inset -10px 0px 20px -6px #365470';
 
 var ice_shadow = 'inset 0px 0px 20px -6px #365470';
 
@@ -118,19 +107,15 @@ function checkSize(block, iblock, readmore, ish) {
     if (h1 < h2) {
         collapseBlock(block, iblock, readmore);
     }
-
     else {
         expandBlock(block, iblock, readmore, ish);
     }
- 
 }
-
 
 function checkIceBlocks() {
     checkSize(block1, iblock1, readmore1, ish1);
     checkSize(block2, iblock2, readmore2, ish2);
 }
-
 
 function expandBlock(block, iblock, readmore, ish) {
     // var w = $(window).width();
@@ -138,7 +123,6 @@ function expandBlock(block, iblock, readmore, ish) {
     block.css('overflow', 'auto');
     block.state = 'expanded';
     block.removeClass('gradient-text');
-
 
     iblock.mCustomScrollbar({
         callbacks:{
@@ -208,7 +192,6 @@ $('#readmore-ib2').click(function() {
 });
 
 
-
 // BTCOIN button click
 
 // $(window).on('load', function() {
@@ -265,7 +248,6 @@ $("#wallet").focus(function(){
         }
     }
 })();
-
 
 $('.edem-input').val('');
 $('#message').val('');
