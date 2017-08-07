@@ -37,8 +37,10 @@
 
         $(window).on('load', function () {
         var $preloader = $('#page-preloader'),
-            $loader   = $preloader.find('.loader');
+            $loader = $preloader.find('.loader'),
+            $loading = $('.loadig-container');
         $loader.delay(4000).fadeOut();
+        $loading.delay(3900).fadeOut();
         $preloader.delay(4500).fadeOut('slow');
         // $(window).delay(3000).scrollTop(0);
         });
@@ -99,7 +101,11 @@
 
 <!-- ##########  PRELOADER  ##########  -->
     <div id="page-preloader">
+        <div class="loadig-container">
+            <p>Loading...</p>
+        </div>
         <div class="loader">
+        <!-- <h1>Loading</h1> -->
             <div class="orbital">
                 <div class="io"></div>
             </div>
@@ -654,7 +660,7 @@
 
                     <p class="col">Two last modules of the Iceworm are dedicated to the nuclear power sources. The <a href="https://en.wikipedia.org/wiki/Stirling_radioisotope_generator">Stirling Radioisotope Generator</a> (SRG) of the third module produces more than a half of the electrical energy, consumed by all systems of the Iceworm. The tail module contains a second SRG. It can work in two modes - generator and heater. The last one is essential for heating the water, sucked in from the melted exterior ice and pushing it out from the jets in the tail to melt the ice in front of it. Thus, during the ice penetration phase of its motion Iceworm moves backwards.</p>
 
-                    <p class="col">After reaching the liquid water, the Iceworm will start its descent to the bottom of the Europa's underice ocean, taking water probes on its way. It has to withstand colossal pressures, so the outer shell of the AUV’s modules has to be made of steel, covered with a layer of protective coating. Due to the unknown chemical composition of the subsurface ocean on Europa, this coating has to be chemically stable and resistant to scratches. One of the possible solutions is to use self-healing coatings. The same requirements apply to the material of the inter-module junctions has to be flexible and durable in addition.</p>
+                    <p class="col">After reaching the liquid water, the Iceworm will start its descent to the bottom of the Europa's underice ocean, taking water probes on its way. It has to withstand colossal pressures, so the outer shell of the AUV’s modules has to be made of steel, covered with a layer of protective coating. Due to the unknown chemical composition of the subsurface ocean on Europa, this coating has to be chemically stable and resistant to scratches. One of the possible solutions is to use self-healing coatings. The same requirements apply to the material of the inter-module junctions that, in addition, has to be flexible and durable.</p>
 
                     <p class="col">The design of the Iceworm, targeted at obtaining an AUV with high survivability and maneuverability, puts tough requirements to its core systems and materials. But with respect to evolving technologies it might be a feasible solution for the payload of the future Europa ice penetration mission.</p>
 

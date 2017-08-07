@@ -230,6 +230,14 @@ section {
   margin-bottom: 5vh;
 }
 
+
+@media (orientation: portrait) {
+  .title-wrap {
+    top: 20vh;
+  }
+
+}
+
 @media (min-width: 992px) {
   .double-col {
 
