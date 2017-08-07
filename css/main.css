@@ -209,6 +209,26 @@ section {
 }
 
 
+.title-wrap {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 18%;
+  left: 0;
+  z-index: 50 !important;
+}
+
+#title {
+/*  position: absolute;
+  top: 50%;
+  left: 50%;*/
+  z-index: 50 !important;
+
+}
+
+#slogan {
+  margin-bottom: 5vh;
+}
 
 @media (min-width: 992px) {
   .double-col {
@@ -401,6 +421,7 @@ section {
   text-shadow: 0 0 6px #c55d22;
   letter-spacing: 3px;
   margin-bottom: 0.3em;
+  z-index: 3000;
 }
 
 .intro .intro-body .intro-text {
@@ -412,9 +433,9 @@ section {
   font-family: 'Oswald', sans-serif;
 }
 
-.intro-text{
+/*.intro-text{
   margin-bottom: 0;
-}
+}*/
 
 .heading-row {
   margin-bottom: 5vh;
@@ -503,7 +524,7 @@ section {
   .intro .intro-body .brand-heading {
     /*text-align: left;*/
     font-size: 2.8em;
-    margin-bottom: 6vh;
+    /*margin-bottom: 6vh;*/
   }
 
   .intro .intro-body .intro-text {
@@ -523,7 +544,7 @@ section {
 @media (max-height: 600px) {
   .intro .intro-body .brand-heading {
     font-size: 2.8em;
-    margin-bottom: 6vh;
+    /*margin-bottom: 6vh;*/
   }
 
   .intro .intro-body .intro-text {
@@ -571,6 +592,10 @@ section {
   /*margin-left: -20%;*/
 }
 
+/*#space-canvas {
+  z-index: -5;
+}*/
+
 
 /*   ==========  JUPITER   ==========   */
 
@@ -586,7 +611,7 @@ section {
 /*  margin-top: 18em;
   margin-bottom: -8em;
   margin-right: -10em;*/
-  background: black;
+  background: transparent;
   width: 50%;
 
   /*margin-top: -10%;*/
@@ -628,7 +653,7 @@ section {
   padding: 0;
   /*border: solid red 1px;*/
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden !important;
   margin-top: -13%;
   margin-right: -8%;
   /*z-index: -3;*/
@@ -656,7 +681,7 @@ video#jupiter-live {
   /*margin-right: -8%;*/
   /*background: darkorange;*/
   /*z-index: -3;*/
-  /*z-index: -3;*/
+  /*z-index: 1;*/
 }
 
 
