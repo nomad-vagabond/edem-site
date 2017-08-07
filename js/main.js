@@ -169,10 +169,10 @@ function collapseBlock(block, iblock, readmore) {
     block.state = 'collapsed';
     iblock.css('box-shadow', 'none');
 
-    if ((getBrowser() == 'Safari') || (getBrowser() == 'Edge')) {
-        block.addClass('solid-text');
+    if ((getBrowser() == 'Chrome') || (getBrowser() == 'Firefox')) {
+        block.addClass('gradient-text');
     }
-    else { block.addClass('gradient-text'); }
+    else { block.addClass('solid-text'); }
 
     // block.addClass('gradient-text');
 
