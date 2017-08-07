@@ -167,7 +167,7 @@ function collapseBlock(block, iblock, readmore) {
     block.state = 'collapsed';
     iblock.css('box-shadow', 'none');
 
-    if (getBrowser() == 'Safari') {
+    if (getBrowser() == 'Safari') || (getBrowser() == 'IE') {
         block.addClass('solid-text');
     }
     else { block.addClass('gradient-text'); }
