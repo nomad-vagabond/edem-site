@@ -22,6 +22,18 @@ function getBrowser() {
 }
 
 
+// function IE_vesion() {
+//   var myNav = navigator.userAgent.toLowerCase();
+//   var myNav_index = myNav.indexOf('msie');
+//   console.log(getBrowser());
+//   console.log(myNav_index);
+//   return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+// }
+
+// $(window).on('load', IE_vesion);
+
+
+
 // Disable cintext menu for elements:
 
 $("body").on("contextmenu", "#ice", function(e) {

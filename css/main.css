@@ -167,15 +167,21 @@ section {
 
   -webkit-column-count: 1;
      -moz-column-count: 1;
-       -o-column-count: 1;
+       /*-o-column-count: 1;*/
           column-count: 1;
 
-  -webkit-column-gap: 10vw;
-     -moz-column-gap: 10vw;
-       -o-column-gap: 10vw;
-          column-gap: 10vw;
+/*  -webkit-column-gap: 10vw !important; 
+     -moz-column-gap: 10vw !important;*/
+       /*-o-column-gap: 10vw;*/
+          /*column-gap: 10vw !important;*/
+
+  -webkit-column-gap: 0; 
+     -moz-column-gap: 0;
+          column-gap: 0;
 
 }
+
+
 
 .enlarged p {
   font-size: 1.5em;
@@ -202,14 +208,28 @@ section {
   pointer-events: none;
 }
 
+
+
 @media (min-width: 992px) {
   .double-col {
+
     -webkit-column-count: 2;
        -moz-column-count: 2;
          -o-column-count: 2;
             column-count: 2;
   }
 
+  .col {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-row {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
 @media(min-width: 1200px) {
@@ -252,6 +272,11 @@ section {
     padding-left: 1.3em;
     padding-right: 1.3em;
   }
+
+    .col-row {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
 }
 
@@ -739,10 +764,10 @@ video#jupiter-live {
 }
 
 .gradient-text {
-  background:         linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
+  /*background:         linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));*/
   background: -webkit-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
   background:    -moz-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
-  background:      -o-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
+  /*background:      -o-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -963,6 +988,17 @@ video#jupiter-live {
   width: 100%;*/
   display: block;
 }
+
+
+@media (max-width: 992px) {
+
+
+  .underice-block {
+    padding-top: 7em;
+  }
+}
+
+
 
 @media (max-width: 450px) {
 
@@ -1212,15 +1248,18 @@ video#jupiter-live {
 
 }
 
+@media (max-width: 768px) {
 
-@media (max-width: 450px) {
-
-#img-worm2 {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  #img-worm2 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 }
+
+
+@media (max-width: 450px) {
 
 #may-be, #so {
     padding-left: 3vw;
