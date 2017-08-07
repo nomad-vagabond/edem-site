@@ -167,15 +167,21 @@ section {
 
   -webkit-column-count: 1;
      -moz-column-count: 1;
-       -o-column-count: 1;
+       /*-o-column-count: 1;*/
           column-count: 1;
 
-  -webkit-column-gap: 10vw;
-     -moz-column-gap: 10vw;
-       -o-column-gap: 10vw;
-          column-gap: 10vw;
+/*  -webkit-column-gap: 10vw !important; 
+     -moz-column-gap: 10vw !important;*/
+       /*-o-column-gap: 10vw;*/
+          /*column-gap: 10vw !important;*/
+
+  -webkit-column-gap: 0; 
+     -moz-column-gap: 0;
+          column-gap: 0;
 
 }
+
+
 
 .enlarged p {
   font-size: 1.5em;
@@ -202,14 +208,56 @@ section {
   pointer-events: none;
 }
 
+
+.title-wrap {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  z-index: 50 !important;
+}
+
+#title {
+/*  position: absolute;
+  top: 50%;
+  left: 50%;*/
+  z-index: 50 !important;
+
+}
+
+#slogan {
+  margin-bottom: 5vh;
+}
+
+
+@media (orientation: portrait) {
+  .title-wrap {
+    top: 20vh;
+  }
+
+}
+
 @media (min-width: 992px) {
   .double-col {
+
     -webkit-column-count: 2;
        -moz-column-count: 2;
          -o-column-count: 2;
             column-count: 2;
   }
 
+  .col {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-row {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
 @media(min-width: 1200px) {
@@ -253,14 +301,24 @@ section {
     padding-right: 1.3em;
   }
 
+    .col-row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
 }
 
 
 /*   ==========   NAVBAR   ==========   */
 
+
 .nav {
   padding-right: 2em;
   padding-left: 1em;
+}
+
+.navbar-brand {
+  padding-left: 2em;
 }
 
 .navbar-custom {
@@ -376,6 +434,7 @@ section {
   text-shadow: 0 0 6px #c55d22;
   letter-spacing: 3px;
   margin-bottom: 0.3em;
+  z-index: 3000;
 }
 
 .intro .intro-body .intro-text {
@@ -387,9 +446,9 @@ section {
   font-family: 'Oswald', sans-serif;
 }
 
-.intro-text{
+/*.intro-text{
   margin-bottom: 0;
-}
+}*/
 
 .heading-row {
   margin-bottom: 5vh;
@@ -478,7 +537,7 @@ section {
   .intro .intro-body .brand-heading {
     /*text-align: left;*/
     font-size: 2.8em;
-    margin-bottom: 6vh;
+    /*margin-bottom: 6vh;*/
   }
 
   .intro .intro-body .intro-text {
@@ -498,7 +557,7 @@ section {
 @media (max-height: 600px) {
   .intro .intro-body .brand-heading {
     font-size: 2.8em;
-    margin-bottom: 6vh;
+    /*margin-bottom: 6vh;*/
   }
 
   .intro .intro-body .intro-text {
@@ -546,6 +605,10 @@ section {
   /*margin-left: -20%;*/
 }
 
+/*#space-canvas {
+  z-index: -5;
+}*/
+
 
 /*   ==========  JUPITER   ==========   */
 
@@ -561,7 +624,7 @@ section {
 /*  margin-top: 18em;
   margin-bottom: -8em;
   margin-right: -10em;*/
-  background: black;
+  background: transparent;
   width: 50%;
 
   /*margin-top: -10%;*/
@@ -603,7 +666,7 @@ section {
   padding: 0;
   /*border: solid red 1px;*/
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden !important;
   margin-top: -13%;
   margin-right: -8%;
   /*z-index: -3;*/
@@ -631,7 +694,7 @@ video#jupiter-live {
   /*margin-right: -8%;*/
   /*background: darkorange;*/
   /*z-index: -3;*/
-  /*z-index: -3;*/
+  /*z-index: 1;*/
 }
 
 
@@ -739,10 +802,10 @@ video#jupiter-live {
 }
 
 .gradient-text {
-  background:         linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
+  /*background:         linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));*/
   background: -webkit-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
   background:    -moz-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
-  background:      -o-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
+  /*background:      -o-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -963,6 +1026,17 @@ video#jupiter-live {
   width: 100%;*/
   display: block;
 }
+
+
+@media (max-width: 992px) {
+
+
+  .underice-block {
+    padding-top: 7em;
+  }
+}
+
+
 
 @media (max-width: 450px) {
 
@@ -1212,15 +1286,18 @@ video#jupiter-live {
 
 }
 
+@media (max-width: 768px) {
 
-@media (max-width: 450px) {
-
-#img-worm2 {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  #img-worm2 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 }
+
+
+@media (max-width: 450px) {
 
 #may-be, #so {
     padding-left: 3vw;
