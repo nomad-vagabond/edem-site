@@ -17,6 +17,8 @@ function getBrowser() {
     { return 'Firefox'; }
     else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
     { return 'IE'; }  
+    else if(navigator.userAgent.indexOf("Edge") != -1 )
+    { return 'Edge'; } 
     else 
     { return 'unknown'; }
 }
@@ -167,7 +169,7 @@ function collapseBlock(block, iblock, readmore) {
     block.state = 'collapsed';
     iblock.css('box-shadow', 'none');
 
-    if ((getBrowser() == 'Safari') || (getBrowser() == 'IE')) {
+    if ((getBrowser() == 'Safari') || (getBrowser() == 'Edge')) {
         block.addClass('solid-text');
     }
     else { block.addClass('gradient-text'); }
