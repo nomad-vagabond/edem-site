@@ -213,7 +213,7 @@ section {
   width: 100%;
   display: inline-block;
   position: absolute;
-  top: 18%;
+  top: 10vh;
   left: 0;
   z-index: 50 !important;
 }
@@ -303,9 +303,14 @@ section {
 
 /*   ==========   NAVBAR   ==========   */
 
+
 .nav {
   padding-right: 2em;
   padding-left: 1em;
+}
+
+.navbar-brand {
+  padding-left: 2em;
 }
 
 .navbar-custom {
