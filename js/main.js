@@ -1,16 +1,11 @@
 
 
-// document.getElementById('ice-block1').state = 'expanded';
-// document.getElementById('ice-block2').state = 'expanded';
-
-// $('#ice-block1').state = 'expanded';
-// $('#ice-block2').state = 'expanded';
-
 function getBrowser() { 
     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
     { return 'Opera'; }
 
-// "Edge\/\d+"
+    else if ((navigator.userAgent.toLowerCase().indexOf("chrome") != -1 ) && (navigator.vendor.toLowerCase().indexOf("google") > -1))
+    { return 'Chrome'; }
 
     else if (/Edge\/\d+/.test(navigator.userAgent))
     { return 'Edge'; }
@@ -18,33 +13,15 @@ function getBrowser() {
     else if ((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
     { return 'IE'; } 
 
-    else if (navigator.userAgent.indexOf("Safari") != -1)
-    { return 'Safari'; }
-
     else if (navigator.userAgent.indexOf("Firefox") != -1 ) 
     { return 'Firefox'; }
 
-    else if (navigator.userAgent.indexOf("Chrome") != -1 )
-    { return 'Chrome'; }
-
-    // else if (navigator.userAgent.indexOf("Edge") != -1 )
-    // { return 'Edge'; } 
+    else if (navigator.userAgent.indexOf("Safari") != -1)
+    { return 'Safari'; }
 
     else 
     { return 'unknown'; }
 }
-
-
-// function IE_vesion() {
-//   var myNav = navigator.userAgent.toLowerCase();
-//   var myNav_index = myNav.indexOf('msie');
-//   console.log(getBrowser());
-//   console.log(myNav_index);
-//   return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-// }
-
-// $(window).on('load', IE_vesion);
-
 
 
 // Disable cintext menu for elements:
@@ -64,16 +41,6 @@ $("body").on("contextmenu", ".page-scroll", function(e) {
 $("body").on("contextmenu", "#bottom-wrap", function(e) {
   return false;
 });
-
-
-// (function($) {
-//     $.fn.hasScrollBar = function() {
-//         // return this.get(0).scrollHeight > this.height();
-//         return this.get(0).scrollHeight > this.innerHeight();
-//     }
-// })(jQuery);
-
-
 
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
@@ -103,7 +70,6 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
-
 
 // Ice Blocks
 
