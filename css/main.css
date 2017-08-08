@@ -230,6 +230,12 @@ section {
   margin-bottom: 5vh;
 }
 
+@media (min-height: 850px) {
+  .title-wrap {
+    top: 20vh;
+  }
+}
+
 
 @media (orientation: portrait) {
   .title-wrap {
@@ -237,6 +243,15 @@ section {
   }
 
 }
+
+
+@media (max-height: 600px) {
+  .title-wrap {
+    top: 5vh;
+  }
+}
+
+
 
 @media (min-width: 992px) {
   .double-col {
