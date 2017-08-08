@@ -213,7 +213,7 @@ section {
   width: 100%;
   display: inline-block;
   position: absolute;
-  top: 10vh;
+  top: 18vh;
   left: 0;
   z-index: 50 !important;
 }
@@ -247,10 +247,9 @@ section {
 
 @media (max-height: 600px) {
   .title-wrap {
-    top: 5vh;
+    top: 15vh;
   }
 }
-
 
 
 @media (min-width: 992px) {
@@ -316,10 +315,14 @@ section {
     padding-right: 1.3em;
   }
 
-    .col-row {
-      padding-left: 0;
-      padding-right: 0;
-    }
+  .col-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title-wrap {
+    top: 60px;
+  }
 
 }
 
@@ -330,10 +333,12 @@ section {
 .nav {
   padding-right: 2em;
   padding-left: 1em;
+  /*border: 2px solid green;*/
 }
 
 .navbar-brand {
   padding-left: 2em;
+  /*border: 2px solid green;*/
 }
 
 .navbar-custom {
@@ -342,11 +347,15 @@ section {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   background-color: black;
+  /*border: 2px solid green;*/
+  padding-bottom: 0;
+  /*margin-bottom: -2em;*/
 }
 .navbar-custom .navbar-toggle {
   color:  #808080;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 12px;
+  /*border: 2px solid green;*/
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
@@ -426,7 +435,7 @@ section {
   display: table;
   width: 100%;
   height: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   text-align: center;
   color: white;
   background: transparent;
@@ -438,6 +447,9 @@ section {
   bottom: 0;
   vertical-align: bottom;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .intro .intro-body .brand-heading {
@@ -449,7 +461,7 @@ section {
   text-shadow: 0 0 6px #c55d22;
   letter-spacing: 3px;
   margin-bottom: 0.3em;
-  z-index: 3000;
+  /*z-index: 3000;*/
 }
 
 .intro .intro-body .intro-text {
@@ -487,6 +499,8 @@ section {
   border: 0;
   margin: 0;
   padding: 0;
+  min-height: 70px;
+  /*z-index: 166 !important;*/
   /*max-height: 50px;*/
 }
 
@@ -1604,7 +1618,7 @@ textarea::-moz-selection{
 }
 
 #message:select {
-  background-color: green;
+  /*background-color: green;*/
 }
 
 .input-container {
