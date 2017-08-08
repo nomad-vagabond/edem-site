@@ -831,11 +831,13 @@ video#jupiter-live {
 }
 
 .gradient-text {
-  /*background:         linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));*/
+  background:         linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
   background: -webkit-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
   background:    -moz-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));
   /*background:      -o-linear-gradient(rgba(54,84,112, 1), rgba(54,84,112, 1) 85%, rgba(54,84,112, 0));*/
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 
 }
