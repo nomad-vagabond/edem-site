@@ -1283,6 +1283,12 @@ video#jupiter-live {
   margin-bottom: -2px;
 }
 
+#bottom-wrap {
+  overflow: hidden;
+/*  text-align: center;
+  display: inline-block;*/
+}
+
 
 @media (max-width: 992px) {
 
@@ -1325,14 +1331,35 @@ video#jupiter-live {
     padding-right: 0;
   }
 
+  #bottom {
+    width: 140%;
+    left: 0;
+    margin-left: -30%;
+  }
+
 }
 
 
 @media (max-width: 450px) {
 
-#may-be, #so {
+  #may-be, #so {
     padding-left: 3vw;
-  padding-right: 3vw;
+    padding-right: 3vw;
+  }
+
+  #bottom {
+    width: 180%;
+    left: 0;
+    margin-left: -60%;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+.r-img-right {
+  margin-bottom: -20%;
 }
 
 }
