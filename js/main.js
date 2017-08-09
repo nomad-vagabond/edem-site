@@ -1,4 +1,41 @@
 
+var block1 = $('#ice-block1');
+block1.state = 'expanded';
+var iblock1 = $('#ib1');
+iblock1.ish = $('#ice-shadow1');
+var readmore1 = $('#readmore-ib1');
+var ish1 = $('#ice-shadow1');
+
+var block2 = $('#ice-block2');
+block2.state = 'expanded';
+var iblock2 = $('#ib2');
+iblock2.ish = $('#ice-shadow2');
+var readmore2 = $('#readmore-ib2');
+var ish2 = $('#ice-shadow2');
+
+var ice_shadow = 'inset 0px 0px 20px -6px #365470';
+
+var merged_blocks = false;
+
+
+function mergeBlocks() {
+
+    if ($(window).width() <= 450) {
+
+        $("#ice-block2").appendTo("#ice-block1");
+        $("#ice-over2").css('height', '0');
+        $("#B1").css('height', '1800px');
+    }
+
+    else {
+        $("#ice-block2").appendTo("#ib2");
+        // $("#second-row").height = 0;
+        $("#second-row").css('height', '85%');
+    }
+}
+
+// $(window).on('resize', mergeBlocks);
+
 
 function getBrowser() { 
     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
@@ -73,21 +110,7 @@ $(document).ready(collapseNavbar);
 
 // Ice Blocks
 
-var block1 = $('#ice-block1');
-block1.state = 'expanded';
-var iblock1 = $('#ib1');
-iblock1.ish = $('#ice-shadow1');
-var readmore1 = $('#readmore-ib1');
-var ish1 = $('#ice-shadow1');
 
-var block2 = $('#ice-block2');
-block2.state = 'expanded';
-var iblock2 = $('#ib2');
-iblock2.ish = $('#ice-shadow2');
-var readmore2 = $('#readmore-ib2');
-var ish2 = $('#ice-shadow2');
-
-var ice_shadow = 'inset 0px 0px 20px -6px #365470';
 
 
 function checkSize(block, iblock, readmore, ish) {
@@ -104,6 +127,25 @@ function checkSize(block, iblock, readmore, ish) {
 }
 
 function checkIceBlocks() {
+
+    if ($(window).width() <= 450) {
+
+        merged_blocks = true;
+        $("#ice-block2").appendTo("#ice-block1");
+        $("#ice-over2").css('height', '0');
+        $("#ice-block1").css('height', '1800px');
+        $("#B1").css('height', '1800px');
+    }
+
+    else {
+        merged_blocks = false;
+        $("#ice-block2").prependTo("#ib2");
+        $("#ice-over2").css('height', 'auto');
+
+        // $("#second-row").height = 0;
+        $("#ice-block2").css('height', '500px');
+    }
+
     checkSize(block1, iblock1, readmore1, ish1);
     checkSize(block2, iblock2, readmore2, ish2);
 }
@@ -140,8 +182,10 @@ function collapseBlock(block, iblock, readmore) {
     if (iblock.hasClass("mCustomScrollbar")) {
         iblock.mCustomScrollbar("destroy");
     }
-    
-    block.css('height', '85%');
+    if (merged_blocks == false) {
+        block.css('height', '85%');
+    }
+    // block.css('height', '85%');
     block.css('overflow', 'hidden');
     block.state = 'collapsed';
     iblock.css('box-shadow', 'none');
