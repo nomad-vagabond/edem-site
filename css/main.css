@@ -1174,11 +1174,11 @@ video#jupiter-live {
   background:      -o-linear-gradient( rgb(0, 0, 0), rgb(52, 0, 131));
 }
 
-#violet {
+.violet {
   background: rgb(52, 0, 131);
 }
 
-#spacecraft, #payload, #auv-packed {
+#spacecraft-img, #payload, #auv-packed {
   max-width: 600px;
 }
 
