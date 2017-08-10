@@ -17,72 +17,6 @@ var ice_shadow = 'inset 0px 0px 20px -6px #365470';
 
 var merged_blocks = false;
 
-
-function mergeBlocks() {
-    // var merged_blocks = false;
-    // if (($(window).width() <= 450) && (!merged_blocks)) {
-    if ($(window).width() <= 450) {
-
-        if (!merged_blocks) {
-            $("#ice-block2").removeClass('gradient-text');
-            $("#ice-block2").appendTo("#ice-block1");
-            $(".ice-block").css('height', '145vw');
-            $("#ice-over2").css('height', '0');
-            
-        }
-        // $("#ice-block2").removeClass('gradient-text');
-        merged_blocks = true;
-
-    }
-
-    else if (merged_blocks) {
-        $("#ice-block2").prependTo("#ib2");
-        $("#ice-over2").css('height', '');
-        $(".ice-block").css('height', '');
-        $("#ice-over2").css('height', '');
-        $("#ice-block2").css('height', '');
-        merged_blocks = false;
-
-
-    // else if (merged_blocks) && (($(window).width() > 450)) {
-
-
-    // else if ($(window).width() > 450) {
-    //     merged_blocks = false;
-    //     $("#ice-block2").prependTo("#ib2");
-    //     $("#ice-over2").css('height', '');
-    //     $(".ice-block").css('height', '');
-    //     $("#ice-over2").css('height', '');
-    //     $("#ice-block2").css('height', '');
-
-
-
-        // $('.page').css();
-
-        // if ($(window).width() <= 767) {
-        //     $(".ice-block").css('height', '70vw'); 
-        //     $(".block2").css('height', '80vw');
-        //     $("#ice-over2").css('height', 'auto');
-        // }
-
-        // else if ($(window).width() <= 992) {
-        //     $(".ice-block").css('height', '45vw'); 
-        //     $(".block2").css('height', '55vw');
-        //     $("#ice-over2").css('height', 'auto');
-        // }
-
-        // // else if ($(window).width() > 992) {
-        // else {
-        //     $(".ice-block").css('height', '65vw');
-        //     $("#ice-over2").css('height', 'auto');
-        // }
-
-    }
-}
-
-// $(window).on('resize', mergeBlocks);
-
-
 function getBrowser() { 
     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
     { return 'Opera'; }
@@ -156,15 +90,34 @@ $(document).ready(collapseNavbar);
 
 // Ice Blocks
 
+function mergeBlocks() {
+
+    if ($(window).width() <= 450) {
+
+        if (!merged_blocks) {
+            $("#ice-block2").removeClass('gradient-text');
+            $("#ice-block2").appendTo("#ice-block1");
+            $(".ice-block").css('height', '145vw');
+            $("#ice-over2").css('height', '0');
+        }
+        merged_blocks = true;
+    }
+
+    else if (merged_blocks) {
+        $("#ice-block2").prependTo("#ib2");
+        $("#ice-over2").css('height', '');
+        $(".ice-block").css('height', '');
+        $("#ice-over2").css('height', '');
+        $("#ice-block2").css('height', '');
+        merged_blocks = false;
+    }
+}
+
 function checkIceBlocks() {
-
-
     mergeBlocks();
-
     checkSize(block1, iblock1, readmore1, ish1);
     checkSize(block2, iblock2, readmore2, ish2);
 }
-
 
 function checkSize(block, iblock, readmore, ish) {
 
@@ -180,7 +133,6 @@ function checkSize(block, iblock, readmore, ish) {
 }
 
 function expandBlock(block, iblock, readmore, ish) {
-    // var w = $(window).width();
     block.css('height', 'auto');
     block.css('overflow', 'auto');
     block.state = 'expanded';
@@ -190,15 +142,10 @@ function expandBlock(block, iblock, readmore, ish) {
         callbacks:{
             onOverflowY: function(){
                 readmore.text('...less');
-                // iblock.css('box-shadow', iblock.cshadow);
-                // iblock.css('padding: 0;');
-                // block.css('padding: 0;');
-                ish.css('box-shadow', ice_shadow);
-                
+                ish.css('box-shadow', ice_shadow);   
             },
             onOverflowYNone: function(){
                 readmore.text('');
-                // iblock.css('box-shadow', 'none');
                 ish.css('box-shadow', 'none');
                 iblock.css('padding-left: 2em;');
             },
@@ -211,9 +158,7 @@ function collapseBlock(block, iblock, readmore) {
     if (iblock.hasClass("mCustomScrollbar")) {
         iblock.mCustomScrollbar("destroy");
     }
-    // if (merged_blocks == false) {
-    //     block.css('height', '85%');
-    // }
+
     block.css('height', '86%');
     block.css('overflow', 'hidden');
     block.state = 'collapsed';
@@ -223,8 +168,6 @@ function collapseBlock(block, iblock, readmore) {
     if ((getBrowser() == 'Chrome') || (getBrowser() == 'Firefox')) {
         block.addClass('gradient-text');
     }
-    // else { block.addClass('solid-text'); }
-    // block.addClass('gradient-text');
 
     readmore.text('more...');
 
