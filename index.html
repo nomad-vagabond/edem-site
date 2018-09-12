@@ -48,47 +48,25 @@
     <title>Europa Direct Encounter Mission</title>
     <link rel="icon" href="img/edem-icon-ED.png">
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
-
+    <script src="js/vendors.min.js"></script>
     <!-- Preloader fade out -->
-    <link href="css/preloader.css" rel="stylesheet">
+    <style>#page-preloader{background:#000;overflow:hidden;position:fixed;left:0;top:0;right:0;bottom:0;z-index:100000}#page-preloader p{color:#c55d22}.loadig-container{position:absolute;bottom:2%;right:5%;display:inline-block;text-align:center}.loader{background:0 0;z-index:100;position:fixed;top:50%;left:50%}.orbital{left:-18px;background-color:#c55d22;width:36px;height:36px;border-radius:50%;margin:0 auto;position:relative;-webkit-animation:orbital 3s infinite linear;-moz-animation:orbital 3s infinite linear;-o-animation:orbital 3s infinite linear;animation:orbital 3s infinite linear}.orbital_2,.orbital_3,.orbital_4{left:-18px;background-color:transparent;width:36px;height:36px;border-radius:50%;margin:-36px auto 0;position:relative}.orbital_2{-webkit-animation:orbital 6s infinite linear;-moz-animation:orbital 6s infinite linear;-o-animation:orbital 6s infinite linear;animation:orbital 6s infinite linear}.orbital_3{-webkit-animation:orbital 12s infinite linear;-moz-animation:orbital 12s infinite linear;-o-animation:orbital 12s infinite linear;animation:orbital 12s infinite linear}.orbital_4{-webkit-animation:orbital 28.5s infinite linear;-moz-animation:orbital 28.5s infinite linear;-o-animation:orbital 28.5s infinite linear;animation:orbital 28.5s infinite linear}.callisto,.europa,.ganymede,.io{position:absolute;border-radius:50%}.io{width:8px;height:8px;top:-33px;left:-27px;background-color:gold}.europa{width:7px;height:7px;top:-59px;left:-43px;background-color:#D7AFA3}.ganymede{width:11px;height:11px;top:80px;left:-117px;background-color:#8C8C8C}.callisto{width:12px;height:12px;top:14px;right:-230px;background-color:#7F6F60}@keyframes orbital{to{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}from{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes orbital{to{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}from{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes orbital{to{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}from{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes orbital{to{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}from{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes orbital-inicial{from{opacity:0;filter:alpha(opacity=0)}to{opacity:1;filter:alpha(opacity=100)}}@-o-keyframes orbital-inicial{from{opacity:0;filter:alpha(opacity=0)}to{opacity:1;filter:alpha(opacity=100)}}@-moz-keyframes orbital-inicial{from{opacity:0;filter:alpha(opacity=0)}to{opacity:1;filter:alpha(opacity=100)}}@-webkit-keyframes orbital-inicial{from{opacity:0;filter:alpha(opacity=0)}to{opacity:1;filter:alpha(opacity=100)}}</style>
     <script>
 
         $(window).on('load', function () {
         var $preloader = $('#page-preloader'),
             $loader = $preloader.find('.loader'),
             $loading = $('.loadig-container');
-        $loader.delay(4000).fadeOut();
-        $loading.delay(3900).fadeOut();
-        $preloader.delay(4500).fadeOut('slow');
+        $loader.delay(500).fadeOut();
+        $loading.delay(500).fadeOut();
+        $preloader.delay(500).fadeOut();
         });
 
     </script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <!-- <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="css/vendors.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- mCustomScrollbar -->
-    <link href="plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" >
-
-    <!-- Theme CSS -->
-    <link href="css/main.css" rel="stylesheet">
- 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script type="text/javascript" src="js/stars.js"></script>
     
     <base target="_blank">
 
@@ -168,7 +146,8 @@
         <div class="container-wide">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" width='15px' height='15px' viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">EDEM</a>
             </div>
@@ -227,8 +206,8 @@
             
                 <div class="scrolly">
                     <a href="#surface" class="page-scroll">
-                        <img class="image-up" src="img/image_up.png" />
-                        <img class="image-down" src="img/image_down.png" />
+                        <img class="image-up lazyload" data-original="img/image_up.png" />
+                        <img class="image-down lazyload" data-original="img/image_down.png" />
                     </a>
                 </div>
             </div>
@@ -242,7 +221,7 @@
             </div>
 
             <div id="surface-wrap">
-                <img id="surface" src="img/europa-cap.png" align="middle" class="locked">
+                <img id="surface lazyload" data-original="img/europa-cap.png" align="middle" class="locked">
             </div>
 
 
@@ -290,7 +269,7 @@
 
                                     <p>For these reasons Europa’s unusual surface is dominated by features in the form of linear ridges, bands, and fractures. The most striking of them are dark streaks crisscrossing the entire globe, called lineae. The most likely hypothesis states that the lineae on Europa may have been produced by a series of eruptions of warm ice as the crust spread open to expose warmer layers beneath.</p>
 
-                                    <p>Recently, the Hubble Space Telescope caught signs of possible <a href="https://www.nasa.gov/press-release/nasa-s-hubble-spots-possible-water-plumes-erupting-on-jupiters-moon-europa">water vapor plumes</a> that erupt from beneath the icy surface. Still there is no evidence that these plumes originate from the sub-surface ocean or just a result of tectonic activity in outer layers of ice. This leads to the necessity in considering different possible ways of reaching Europa's inner ocean in the frame of future landing missions.</p>
+                                    <p>Recently, the Hubble Space Telescope caught signs of possible <a href="https://www.nasa.gov/press-release/nasa-s-hubble-spots-possible-water-plumes-erupting-on-jupiters-moon-europa" target="_blank"  rel="noreferrer">water vapor plumes</a> that erupt from beneath the icy surface. Still there is no evidence that these plumes originate from the sub-surface ocean or just a result of tectonic activity in outer layers of ice. This leads to the necessity in considering different possible ways of reaching Europa's inner ocean in the frame of future landing missions.</p>
                                 
                                 </div>
                                 <div id="readmore-ib2"></div>
@@ -314,7 +293,7 @@
 
                 <p class="big-first">The heat from tidal flexing allows the Europa's subsurface ocean to remain liquid. But several kilometers of ice above it defy the ingenuity of ice penetration tools that will constitute the payload of the future landing mission to Europa.</p>
 
-                <p>There exist several methods to penetrate through the Europa's ice crust, which are mainly based on the drilling or ice-melting principles. These techniques require large amount of input energy to drill or melt down through several-km ice crust, which may contain fragments or even layers of more dense material. The possibility of using solar energy to power a penetrator is limited by the reduced solar flux near Jupiter and long working path of the penetrator. This leads to the need of using nuclear power for drilling/melting process, probably utilizing a <a href="https://solarsystem.nasa.gov/rps/types.cfm">radioisotope power system</a>.</p>
+                <p>There exist several methods to penetrate through the Europa's ice crust, which are mainly based on the drilling or ice-melting principles. These techniques require large amount of input energy to drill or melt down through several-km ice crust, which may contain fragments or even layers of more dense material. The possibility of using solar energy to power a penetrator is limited by the reduced solar flux near Jupiter and long working path of the penetrator. This leads to the need of using nuclear power for drilling/melting process, probably utilizing a <a href="https://solarsystem.nasa.gov/rps/types.cfm" target="_blank"  rel="noreferrer">radioisotope power system</a>.</p>
 
                 <p>The very first challenge for a penetrator that starts drilling on the top of the ice shell – is upper layer of cold and hard ice. If successfully dealt with this and other possible obstacles inside deep layers of ice, at the end of its journey, the penetrator will deploy a robotic probe – an autonomous underwater vehicle that will seek for possible signs of life forms with its sensors.</p>
 
@@ -325,9 +304,9 @@
             <div class="col-md-6 underice-block top-offset">
                 <h2>EDEM approach</h2>
 
-                <p class="big-first">Europa Direct Encounter Mission (EDEM) - is a brand new concept of a robotic landing mission to Europa with optional kinetic ice penetration capabilities. The mission concept is based on the application of an ultra-strong <a href="https://en.wikipedia.org/wiki/Momentum_exchange_tether">momentum exchange tether</a> that serves for efficient deceleration of the Europa landing module and acceleration of the ice-penetration assets that leave a long tunnel in ice after the impact with the surface. This results in a reduced amount of rocket propellant, needed to decelerate the lander, and in reduced path in ice, which increases the possibility of reaching the subsurface ocean.</p>
+                <p class="big-first">Europa Direct Encounter Mission (EDEM) - is a brand new concept of a robotic landing mission to Europa with optional kinetic ice penetration capabilities. The mission concept is based on the application of an ultra-strong <a href="https://en.wikipedia.org/wiki/Momentum_exchange_tether" target="_blank"  rel="noreferrer">momentum exchange tether</a> that serves for efficient deceleration of the Europa landing module and acceleration of the ice-penetration assets that leave a long tunnel in ice after the impact with the surface. This results in a reduced amount of rocket propellant, needed to decelerate the lander, and in reduced path in ice, which increases the possibility of reaching the subsurface ocean.</p>
 
-                <p>EDEM is developed with respect to the evolving technologies that will become mature by the end of the next decade, when more information about Europa's ice crust is available from the <a href="https://solarsystem.nasa.gov/missions/europaflyby/indepth" target="_blank">Europa Multiple Flyby Mission</a>. Particulary, ultra-strong carbon-nanotube tether, similar to one that might be used in construction of the <a href="https://en.wikipedia.org/wiki/Space_elevator">Space Elevator</a>, is in the core of the concept. Such tether, spun up by a pair of ion thrusters, is capable of providing velocity of several km/s on its endings. At the moment of tether release spacecraft modules, attached to the endings of the tether, will experience increase or decrease in their linear velocities depending on the direction of the tether rotation. Thus, on one hand, penetration assets will experience addition in their orbital velocity, increasing the impact energy to form a deep tunnel in the ice, and thus reducing the working path of the drilling or ice-melting equipment, which will be delivered to the impact site by the landing module. On the other hand, a lander will lose significant amounts of its delta-v, which will significantly decrease the amount of rocket propellant, needed for deceleration and landing on the surface of Europa.</p> 
+                <p>EDEM is developed with respect to the evolving technologies that will become mature by the end of the next decade, when more information about Europa's ice crust is available from the <a href="https://www.jpl.nasa.gov/missions/europa-clipper/" target="_blank" rel="noreferrer">Europa Multiple Flyby Mission</a>. Particulary, ultra-strong carbon-nanotube tether, similar to one that might be used in construction of the <a href="https://en.wikipedia.org/wiki/Space_elevator" target="_blank"  rel="noreferrer">Space Elevator</a>, is in the core of the concept. Such tether, spun up by a pair of ion thrusters, is capable of providing velocity of several km/s on its endings. At the moment of tether release spacecraft modules, attached to the endings of the tether, will experience increase or decrease in their linear velocities depending on the direction of the tether rotation. Thus, on one hand, penetration assets will experience addition in their orbital velocity, increasing the impact energy to form a deep tunnel in the ice, and thus reducing the working path of the drilling or ice-melting equipment, which will be delivered to the impact site by the landing module. On the other hand, a lander will lose significant amounts of its delta-v, which will significantly decrease the amount of rocket propellant, needed for deceleration and landing on the surface of Europa.</p> 
 
             </div>
         </div>
@@ -356,7 +335,7 @@
                 <div>
                     <div class="col-md-6 black-block text-center">
                         <div id="penetration-scheme-wrap">
-                            <img src="img/EDEM-penetration.jpg" id="penetration-scheme" alt="Europa kinetic ice penetration">
+                            <img class="lazyload" data-original="img/EDEM-penetration.jpg" id="penetration-scheme" alt="Europa kinetic ice penetration">
                         </div>
 
                         <p id="velocity-underimg">The increase of the impact velocity can be achieved by several means. One of them is in the selection of an appropriate flight scheme and another is in the application of the momentum exchange tether that is severed or released at the approach to the target.</p>
@@ -378,17 +357,17 @@
             <div class="double-col">
                 <div>
 
-                <p class="big-first col">In order to be more efficient than a regular rocket engine, a momentum exchange tether must be made of an extremely strong and light material. The preferred tensile strength of such material must be over 65&nbsp;GPa (9,500&nbsp;ksi), which is theoretically achievable for future fibers based on <a href="https://en.wikipedia.org/wiki/Carbon_nanotube">carbon nanotubes</a> with density of ~1.3&nbsp;g/cm<sup>3</sup> (81&nbsp;lb/ft<sup>3</sup>).</p>
+                <p class="big-first col">In order to be more efficient than a regular rocket engine, a momentum exchange tether must be made of an extremely strong and light material. The preferred tensile strength of such material must be over 65&nbsp;GPa (9,500&nbsp;ksi), which is theoretically achievable for future fibers based on <a href="https://en.wikipedia.org/wiki/Carbon_nanotube" target="_blank"  rel="noreferrer">carbon nanotubes</a> with density of ~1.3&nbsp;g/cm<sup>3</sup> (81&nbsp;lb/ft<sup>3</sup>).</p>
 
                 <p class="col">With desired tangential velocities at the endings of the tether, its length will exceed several hundreds of kilometers. Considering a range of issues connected with deployment of such long tether in Low Earth Orbit and significant time, needed to reach the final angular velocity, best solution is to accelerate the tether's revolution during the interplanetary flight phase.</p>
 
-                <p class="col">The angular acceleration can be provided by a pair of <a href="https://en.wikipedia.org/wiki/Ion_thruster">ion thrusters</a> that will start working at the very beginning of the passive interplanetary flight, till reaching desired velocity on the approach to the Jovian System. The interplanetary flight will take up to 6-7&nbsp;years, considering selection of an efficient trajectory with multiple <a href="https://en.wikipedia.org/wiki/Gravity_assist">gravity assist</a> (GA) maneuvers near Earth (EGA) and Venus (VGA). Similar trajectories have been selected for all <a href="https://en.wikipedia.org/wiki/List_of_missions_to_the_outer_planets">spacecraft that traveled to outer planets</a> and beyond, including Voyagers, Gallileo, Cassini, Juno, as well as for the the upcoming <a href="https://en.wikipedia.org/wiki/Europa_Clipper">flyby mission to Europa</a>.</p>
+                <p class="col">The angular acceleration can be provided by a pair of <a href="https://en.wikipedia.org/wiki/Ion_thruster" target="_blank"  rel="noreferrer">ion thrusters</a> that will start working at the very beginning of the passive interplanetary flight, till reaching desired velocity on the approach to the Jovian System. The interplanetary flight will take up to 6-7&nbsp;years, considering selection of an efficient trajectory with multiple <a href="https://en.wikipedia.org/wiki/Gravity_assist" target="_blank"  rel="noreferrer">gravity assist</a> (GA) maneuvers near Earth (EGA) and Venus (VGA). Similar trajectories have been selected for all <a href="https://en.wikipedia.org/wiki/List_of_missions_to_the_outer_planets" target="_blank"  rel="noreferrer">spacecraft that traveled to outer planets</a> and beyond, including Voyagers, Gallileo, Cassini, Juno, as well as for the the upcoming <a href="https://en.wikipedia.org/wiki/Europa_Clipper" target="_blank"  rel="noreferrer">flyby mission to Europa</a>.</p>
 
 
                 <p class="col">Such a long time of the flight is just enough for a pair of ion thrusters to accelerate the tether to the desired angular velocity. The thrusters will be mounted on two separate modules on opposite sides of the tether. One of them consists of the Europa lander and kinetic ice penetration assets (optionally). Another - is an empty rocket's upper stage that will be thrown away into a deep space after tether release on the approach to Europa.</p>
 
                 <div id="trajectory-scheme-wrap" class="text-center col">
-                    <img src="img/Clipper_trajectory_contrast.jpg" class="small-img" alt="Trajectory to Europa">
+                    <img data-original="img/Clipper_trajectory_contrast.jpg" class="small-img lazyload" alt="Trajectory to Europa">
                     <div class="img-title">Possible trajectory for the Europa Multiple Flyby Mission</div>
                 </div>
 
@@ -403,7 +382,7 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <img src="img/EDEM_escape.jpg" class="big-img locked" alt="EDEM Earth escape. Tether acceleration.">
+                <img class="big-img locked lazyload" data-original="img/EDEM_escape.jpg" alt="EDEM Earth escape. Tether acceleration.">
             </div> 
         </div>
 
@@ -437,7 +416,7 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <img src="img/Jupiter_approach.jpg" class="big-img" alt="EDEM approach to Jupiter">
+                <img data-original="img/Jupiter_approach.jpg" class="big-img lazyload" alt="EDEM approach to Jupiter">
             </div>
         </div>
 
@@ -457,7 +436,7 @@
 
         <div class="row top-offset">
             <div class="col-md-8 col-md-offset-2">
-                <img src="img/arrival-separation.jpg" class="big-img locked" alt="EDEM arrival to Jupiter. Separation from tether">
+                <img class="big-img locked lazyload" data-original="img/arrival-separation.jpg" alt="EDEM arrival to Jupiter. Separation from tether">
             </div>
         </div>
 
@@ -488,11 +467,11 @@
         <div class="row text-center">
             <div class="img-container">
                 <div class="col-md-5 col-md-offset-1">
-                    <img src="img/spacecraft-layout.png" class="img-center locked" id="spacecraft-img" alt="EDEM spacecraft layout">
+                    <img class="img-center locked lazyload" data-original="img/spacecraft-layout.png" id="spacecraft-img" alt="EDEM spacecraft layout">
                 </div>
 
                 <div class="col-md-5">
-                    <img src="img/payload_layout.png" class="img-center locked" id="payload" alt="EDEM payload layout">
+                    <img class="img-center locked lazyload" data-original="img/payload_layout.png" id="payload" alt="EDEM payload layout">
                 </div>
             </div>
         </div>
@@ -503,7 +482,7 @@
 
                 <p class="col">The lander, which makes up the spacecraft's second module, is equipped with same ion thrusters, producing the same impulse but in the opposite direction, which results in a pure angular momentum, applied to the tethered system. Application of thrusters with equal thrust allows to eliminate undesirable forces that may change the spacecraft trajectory.</p>
 
-                <p class="col">The main lander's payload is an autonomous underice vehicle (AUV) powered by <a href="https://solarsystem.nasa.gov/rps/types.cfm">radioisotope power system</a> (RPS). The required output power of the RPS is estimated in the range 7-10&nbsp;kW. It utilizes a <a href="https://en.wikipedia.org/wiki/Stirling_engine">Stirling Converter</a> to generate electricity, so the efficiency of the power conversion process can reach 35%. This is very high value compared to <a href="https://en.wikipedia.org/wiki/Thermoelectric_generator">thermoelectric generators</a> that have been used for all previous deep space missions with a nuclear power source.</p>
+                <p class="col">The main lander's payload is an autonomous underice vehicle (AUV) powered by <a href="https://solarsystem.nasa.gov/rps/types.cfm" target="_blank"  rel="noreferrer">radioisotope power system</a> (RPS). The required output power of the RPS is estimated in the range 7-10&nbsp;kW. It utilizes a <a href="https://en.wikipedia.org/wiki/Stirling_engine"target="_blank"  rel="noreferrer">Stirling Converter</a> to generate electricity, so the efficiency of the power conversion process can reach 35%. This is very high value compared to <a href="https://en.wikipedia.org/wiki/Thermoelectric_generator" target="_blank"  rel="noreferrer">thermoelectric generators</a> that have been used for all previous deep space missions with a nuclear power source.</p>
 
                 <p class="col">Due to high power output and with regard to safety and design optimization considerations, there probably will be two separate nuclear power systems, integrated in the AUV construction. During the interplanetary flight, the energy produced by generators, will be used by the second module's spin ion thrusters. So there is no need for mounting additional solar panels. After landing on Europa the energy produced by generators will be used to produce ice-melting heat and electricity, consumed by the AUV’s systems. In the case of successful application of the kinetic penetration assets, the AUV will easily get to the deep ice layers trough the well, left after the impact, so the total generator output power of 7-10&nbsp;kW will be enough for penetrating through warm layers of ice.</p>
 
@@ -511,7 +490,7 @@
 
                 <div class="text-center col">
                     <div class="img-container">
-                        <img src="img/lander_layout.png" class="img-center locked" id="auv-packed" alt="EDEM Europa lander layout">
+                        <img data-original="img/lander_layout.png" class="img-center locked lazyload" id="auv-packed" alt="EDEM Europa lander layout">
                     </div>
                 </div>
             </div>
@@ -537,7 +516,7 @@
 
                     <p class="col">It should be able not only to survive in the tough environment of the unexplored icy world, but also to freely move in water and ice, overcome any obstacle on its way and autonomously make decisions. These requirements define a new frontier for modern robotics and artificial intelligence.</p>
 
-                    <p class="col">The need in ice-penetrating capabilities to be incorporated in the AUV design puts the limit on its shape and size. A series of researches devoted to the development of ice-melting robotic probes <a href="http://www.igsoc.org:8080/annals/55/65/a65A200.pdf">has shown</a> that with power input of ~10&nbsp;kW, the probe's diameter shouldn't exceed 0.2-0.3&nbsp;m (8-12&nbsp;inches). This defines the elongated shape for the AUV, and, with mobility requirement in mind, it should probably be a snake- or worm-shaped robot.</p>
+                    <p class="col">The need in ice-penetrating capabilities to be incorporated in the AUV design puts the limit on its shape and size. A series of researches devoted to the development of ice-melting robotic probes <a href="http://www.igsoc.org:8080/annals/55/65/a65A200.pdf" target="_blank"  rel="noreferrer">has shown</a> that with power input of ~10&nbsp;kW, the probe's diameter shouldn't exceed 0.2-0.3&nbsp;m (8-12&nbsp;inches). This defines the elongated shape for the AUV, and, with mobility requirement in mind, it should probably be a snake- or worm-shaped robot.</p>
                 </div>
             </div>
 
@@ -545,7 +524,7 @@
             <div class="row text-center">
                 <div class="col-md-10 col-md-offset-1">
                     <div id="snake-wrap">
-                        <img src="img/iceworm_layout.jpg" id="img-worm" alt="Iceworm Europa Penetrator Cryobot" class="locked">
+                        <img data-original="img/iceworm_layout.jpg" id="img-worm" alt="Iceworm Europa Penetrator Cryobot" class="locked lazyload">
                         <div class="img-title">
                             Iceworm - mobile autonomous underice/underwater vehicle
                         </div>
@@ -559,17 +538,17 @@
 
                         <div class="col-md-4">
                              <h4>Head module</h4>
-                            <img src="img/iceworm-head-m.png" class="img-center r-img r-img-left locked" alt="Iceworm Europa Probe">
+                            <img data-original="img/iceworm-head-m.png" class="img-center r-img r-img-left locked lazyload" alt="Iceworm Europa Probe">
                         </div>
 
                         <div class="col-md-4">
                             <h4>Microdrone module</h4>
-                            <img src="img/iceworm-microdrone-m.png" class="img-center r-img r-img-center locked" alt="Iceworm Europa Probe">
+                            <img data-original="img/iceworm-microdrone-m.png" class="img-center r-img r-img-center locked lazyload" alt="Iceworm Europa Probe">
                         </div>
 
                         <div class="col-md-4">
                             <h4>Tail module</h4>
-                            <img src="img/iceworm-tail-m.png" class="img-center r-img r-img-right locked" alt="Iceworm Europa Probe">
+                            <img data-original="img/iceworm-tail-m.png" class="img-center r-img r-img-right locked lazyload" alt="Iceworm Europa Probe">
                         </div>
                     </div>
                 </div>
@@ -582,7 +561,7 @@
 
                     <p class="col">The most valuable payload of the Iceworm and the whole mission – is a chemical and biological micro laboratory, placed in the head of the AUV. Its frontal facet is equipped with a powerful LED light, two optical cameras, sonar and an infrared sensor. In order to be able to grab specimens, the first module of the Iceworm is equipped with two robotic arms, capable of delivering samples into the vaults of the inner laboratory. These vaults are represented by the number of drawers of different sizes placed on side facets of the head module.</p>
 
-                    <p class="col">Second module - is responsible for motion control. Here the most part of the <a href="https://en.wikipedia.org/wiki/Underwater_thruster">underwater thrusters</a> are placed: two lateral, with a similar set installed in the tail module, and two longitudinal. Last ones, in combination with water pumps in the tail module are responsible for longitudinal motion of the AUV.</p> 
+                    <p class="col">Second module - is responsible for motion control. Here the most part of the <a href="https://en.wikipedia.org/wiki/Underwater_thruster" target="_blank"  rel="noreferrer">underwater thrusters</a> are placed: two lateral, with a similar set installed in the tail module, and two longitudinal. Last ones, in combination with water pumps in the tail module are responsible for longitudinal motion of the AUV.</p> 
 
                     <p class="col">The four pieces of folding rotary hydrodynamic surfaces in the control module, complemented by the similar set in the tail module, allow it to perform efficient maneuvers underwater. In combination with flexible inter-module junctions they can be used for executing snaky movements to complement or replace the propulsion function of the longitudinal thrusters and tail pumps.</p>
 
@@ -593,18 +572,18 @@
 
             <div class="row" id="drone-pics">
                 <div class="col-md-5 col-md-offset-1 text-center">
-                    <img src="img/microdrone-left.jpg" class="img-center" id="left-drone" alt="Europa Underice Micro Drone AUV">
+                    <img data-original="img/microdrone-left.jpg" class="img-center lazyload" id="left-drone" alt="Europa Underice Micro Drone AUV">
                 </div>
 
                 <div class="col-md-5 text-center">
-                    <img src="img/microdrone-right.jpg" class="img-center" id="right-drone" alt="Europa Underice Micro Drone AUV">
+                    <img data-original="img/microdrone-right.jpg" class="img-center lazyload" id="right-drone" alt="Europa Underice Micro Drone AUV">
                 </div>
             </div>
 
             <div class="row col-row">
                 <div class="double-col">
 
-                    <p class="col">Two last modules of the Iceworm are dedicated to the nuclear power sources. The <a href="https://en.wikipedia.org/wiki/Stirling_radioisotope_generator">Stirling Radioisotope Generator</a> (SRG) of the third module produces more than a half of the electrical energy, consumed by all systems of the Iceworm. The tail module contains a second SRG. It can work in two modes - generator and heater. The last one is essential for heating the water, sucked in from the melted exterior ice and pushing it out from the jets in the tail to melt the ice in front of it. Thus, during the ice penetration phase of its motion Iceworm moves backwards.</p>
+                    <p class="col">Two last modules of the Iceworm are dedicated to the nuclear power sources. The <a href="https://en.wikipedia.org/wiki/Stirling_radioisotope_generator" target="_blank"  rel="noreferrer">Stirling Radioisotope Generator</a> (SRG) of the third module produces more than a half of the electrical energy, consumed by all systems of the Iceworm. The tail module contains a second SRG. It can work in two modes - generator and heater. The last one is essential for heating the water, sucked in from the melted exterior ice and pushing it out from the jets in the tail to melt the ice in front of it. Thus, during the ice penetration phase of its motion Iceworm moves backwards.</p>
 
                     <p class="col">After reaching the liquid water, the Iceworm will start its descent to the bottom of the Europa's underice ocean, taking water probes on its way. It has to withstand colossal pressures, so the outer shell of the AUV’s modules has to be made of steel, covered with a layer of protective coating. Due to the unknown chemical composition of the subsurface ocean on Europa, this coating has to be chemically stable and resistant to scratches. One of the possible solutions is to use self-healing coatings. The same requirements apply to the material of the inter-module junctions that, in addition, has to be flexible and durable.</p>
 
@@ -623,7 +602,7 @@
 
             <div class="row">
                 <div class="container text-center">
-                    <img src="img/iceworm-dive.jpg" class="img-center" id="img-worm2" alt="Iceworm Europa Penetrator Cryobot">
+                    <img data-original="img/iceworm-dive.jpg" class="img-center lazyload" id="img-worm2" alt="Iceworm Europa Penetrator Cryobot">
                 </div>
             </div>
 
@@ -640,7 +619,7 @@
             </div>
 
             <div class="widerows" id="bottom-wrap">
-                <img src="img/bottom_smoke.png" id="bottom" class="locked" alt="Europa Ocean Bottom Alien Life">
+                <img class="locked lazyload" data-original="img/bottom_smoke.png" id="bottom" alt="Europa Ocean Bottom Alien Life">
             </div>
     </section>
 
@@ -671,7 +650,7 @@
                         <i>Project Management</i><br>
                         <i>Design &amp; Engineering</i>
                     </div>
-                    <img src="img/R-pasko.png" class="img-center photo locked">
+                    <img class="img-center photo locked lazyload" data-original="img/R-pasko.png">
                 </div>
 
                 <div class="col-md-4 photo-container top-offset-small">
@@ -679,7 +658,7 @@
                     <div class="role-container">
                         <i>Graphics &amp; Web Design</i>
                     </div>
-                    <img src="img/R-tsyplia.png" class="img-center photo locked"> 
+                    <img class="img-center photo locked lazyload" data-original="img/R-tsyplia.png"> 
                 </div>
 
                 <div class="col-md-4 photo-container top-offset-small">
@@ -687,7 +666,7 @@
                     <div class="role-container">
                         <i>Financial Management</i>
                     </div>
-                    <img src="img/R-gould.png" class="img-center photo locked">
+                    <img class="img-center photo locked lazyload" data-original="img/R-gould.png">
                 </div>
             </div>
         </div>
@@ -697,13 +676,13 @@
         <div class="container top-offset">
             <div class="row" id="donate-text">
                 <div class="col-lg-10 col-lg-offset-1 team-block">
-                <p>The EDEM project was presented at the 68<sup>th</sup> International Astronautical Congress that took place in Adelaide, Australia during 25 – 29 September 2017. The paper is available for download <a target="_blank" href="https://www.researchgate.net/publication/320670924_EDEM_-_Europa_Direct_Encounter_Mission_Possible_scenario_of_an_ultra-strong_momentum_exchange_tether_application_for_a_future_landing_mission_to_Europa" >here</a>.</p>
+                <p>The EDEM project was presented at the 68<sup>th</sup> International Astronautical Congress that took place in Adelaide, Australia during 25 – 29 September 2017. The paper is available for <a target="_blank" rel="noreferrer" href="https://www.researchgate.net/publication/320670924_EDEM_-_Europa_Direct_Encounter_Mission_Possible_scenario_of_an_ultra-strong_momentum_exchange_tether_application_for_a_future_landing_mission_to_Europa" >download</a>.</p>
                 </div>
             </div>
             <div class="row donation-container">
 
                 <div class="col-md-6">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="paypal-btn">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"  id="paypal-btn">
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
                         ">
@@ -713,12 +692,12 @@
                 </div>
 
                 <div class="col-md-6">
-                  <button class="reg" id="coin-btn"><img class="coin" src="img/icon_bitcoin.png" alt="icon_bitcoin">Donate Bitcoin</button>
+                  <button class="reg" id="coin-btn"><img class="coin lazyload" data-original="img/icon_bitcoin.png" alt="icon_bitcoin">Donate Bitcoin</button>
                   <div class="pop">
                     <span>✖</span>
                     <p>Please, donate to Bitcoin address:</p>
                     <input  class="number" type="text" value="3NojDmjzn4hxV1GuaXNZX5HxwKBjz4Y9kK" id="wallet" readonly> 
-                    <img class="qrcode" src="img/qrcode.png" alt="qrcode">
+                    <img class="qrcode lazyload" data-original="img/qrcode.png" alt="qrcode">
                     <p>Thanks!</p>
                   </div>
 
@@ -762,23 +741,22 @@
     
     <footer>
         <div class="container-wide text-center">
-            <p>Copyright &copy; 2018 Vadym Pasko (<a href="http://vadym-pasko.com">vadym-pasko.com</a>)</p> 
+            <p>Copyright &copy; 2018 Vadym Pasko (<a href="http://vadym-pasko.com" target="_blank"  rel="noreferrer">vadym-pasko.com</a>)</p> 
         </div>
     </footer>
 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+ 
 
     <!-- Plugin JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
-    <!-- mCustomScrollbar -->
-    <script src="plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+   
 
     <!-- Theme JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+     <script type="text/javascript" src="js/stars.min.js"></script>
 
     <script>
       $.validate({

@@ -265,4 +265,7 @@ $('.edem-input').val('');
 $('#message').val('');
 
 
+if($('.lazyload').length) {
+    $(".lazyload").lazyload();
+  }
 
