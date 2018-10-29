@@ -49,25 +49,25 @@
     <link rel="icon" href="img/edem-icon-ED.png">
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Preloader fade out -->
-    <link href="css/preloader.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
     <script>
 
         $(window).on('load', function () {
         var $preloader = $('#page-preloader'),
             $loader = $preloader.find('.loader'),
             $loading = $('.loadig-container');
-        $loader.delay(4000).fadeOut();
-        $loading.delay(3900).fadeOut();
-        $preloader.delay(4500).fadeOut('slow');
+        $loader.delay(700).fadeOut();
+        $loading.delay(600).fadeOut();
+        $preloader.delay(700).fadeOut('slow');
         });
 
     </script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
 
     <!-- Custom Fonts -->
@@ -76,7 +76,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- mCustomScrollbar -->
-    <link href="plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" >
+    <link href="plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" >
 
     <!-- Theme CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -88,7 +88,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="js/stars.js"></script>
+    <script type="text/javascript" src="js/stars.min.js"></script>
     
     <base target="_blank">
 
@@ -242,7 +242,7 @@
             </div>
 
             <div id="surface-wrap">
-                <img id="surface" src="img/europa-cap.png" align="middle" class="locked">
+                <img id="surface" data-src="img/europa-cap.png" align="middle" class="locked lazyload">
             </div>
 
 
@@ -356,7 +356,7 @@
                 <div>
                     <div class="col-md-6 black-block text-center">
                         <div id="penetration-scheme-wrap">
-                            <img src="img/EDEM-penetration.jpg" id="penetration-scheme" alt="Europa kinetic ice penetration">
+                            <img data-src="img/EDEM-penetration.jpg" id="penetration-scheme" alt="Europa kinetic ice penetration" class="lazyload">
                         </div>
 
                         <p id="velocity-underimg">The increase of the impact velocity can be achieved by several means. One of them is in the selection of an appropriate flight scheme and another is in the application of the momentum exchange tether that is severed or released at the approach to the target.</p>
@@ -388,7 +388,7 @@
                 <p class="col">Such a long time of the flight is just enough for a pair of ion thrusters to accelerate the tether to the desired angular velocity. The thrusters will be mounted on two separate modules on opposite sides of the tether. One of them consists of the Europa lander and kinetic ice penetration assets (optionally). Another - is an empty rocket's upper stage that will be thrown away into a deep space after tether release on the approach to Europa.</p>
 
                 <div id="trajectory-scheme-wrap" class="text-center col">
-                    <img src="img/Clipper_trajectory_contrast.jpg" class="small-img" alt="Trajectory to Europa">
+                    <img data-src="img/Clipper_trajectory_contrast.jpg" class="small-img lazyload" alt="Trajectory to Europa">
                     <div class="img-title">Possible trajectory for the Europa Multiple Flyby Mission</div>
                 </div>
 
@@ -403,7 +403,7 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <img src="img/EDEM_escape.jpg" class="big-img locked" alt="EDEM Earth escape. Tether acceleration.">
+                <img data-src="img/EDEM_escape.jpg" class="big-img locked lazyload" alt="EDEM Earth escape. Tether acceleration.">
             </div> 
         </div>
 
@@ -437,7 +437,7 @@
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <img src="img/Jupiter_approach.jpg" class="big-img" alt="EDEM approach to Jupiter">
+                <img data-src="img/Jupiter_approach.jpg" class="big-img lazyload" alt="EDEM approach to Jupiter">
             </div>
         </div>
 
@@ -457,7 +457,7 @@
 
         <div class="row top-offset">
             <div class="col-md-8 col-md-offset-2">
-                <img src="img/arrival-separation.jpg" class="big-img locked" alt="EDEM arrival to Jupiter. Separation from tether">
+                <img data-src="img/arrival-separation.jpg" class="big-img locked lazyload" alt="EDEM arrival to Jupiter. Separation from tether">
             </div>
         </div>
 
@@ -488,11 +488,11 @@
         <div class="row text-center">
             <div class="img-container">
                 <div class="col-md-5 col-md-offset-1">
-                    <img src="img/spacecraft-layout.png" class="img-center locked" id="spacecraft-img" alt="EDEM spacecraft layout">
+                    <img data-src="img/spacecraft-layout.png" class="img-center locked lazyload" id="spacecraft-img" alt="EDEM spacecraft layout">
                 </div>
 
                 <div class="col-md-5">
-                    <img src="img/payload_layout.png" class="img-center locked" id="payload" alt="EDEM payload layout">
+                    <img data-src="img/payload_layout.png" class="img-center locked lazyload" id="payload" alt="EDEM payload layout">
                 </div>
             </div>
         </div>
@@ -511,7 +511,7 @@
 
                 <div class="text-center col">
                     <div class="img-container">
-                        <img src="img/lander_layout.png" class="img-center locked" id="auv-packed" alt="EDEM Europa lander layout">
+                        <img data-src="img/lander_layout.png" class="img-center locked lazyload" id="auv-packed" alt="EDEM Europa lander layout">
                     </div>
                 </div>
             </div>
@@ -545,7 +545,7 @@
             <div class="row text-center">
                 <div class="col-md-10 col-md-offset-1">
                     <div id="snake-wrap">
-                        <img src="img/iceworm_layout.jpg" id="img-worm" alt="Iceworm Europa Penetrator Cryobot" class="locked">
+                        <img data-src="img/iceworm_layout.jpg" id="img-worm" alt="Iceworm Europa Penetrator Cryobot" class="locked lazyload">
                         <div class="img-title">
                             Iceworm - mobile autonomous underice/underwater vehicle
                         </div>
@@ -559,17 +559,17 @@
 
                         <div class="col-md-4">
                              <h4>Head module</h4>
-                            <img src="img/iceworm-head-m.png" class="img-center r-img r-img-left locked" alt="Iceworm Europa Probe">
+                            <img data-src="img/iceworm-head-m.png" class="img-center r-img r-img-left locked lazyload" alt="Iceworm Europa Probe">
                         </div>
 
                         <div class="col-md-4">
                             <h4>Microdrone module</h4>
-                            <img src="img/iceworm-microdrone-m.png" class="img-center r-img r-img-center locked" alt="Iceworm Europa Probe">
+                            <img data-src="img/iceworm-microdrone-m.png" class="img-center r-img r-img-center locked lazyload" alt="Iceworm Europa Probe">
                         </div>
 
                         <div class="col-md-4">
                             <h4>Tail module</h4>
-                            <img src="img/iceworm-tail-m.png" class="img-center r-img r-img-right locked" alt="Iceworm Europa Probe">
+                            <img data-src="img/iceworm-tail-m.png" class="img-center r-img r-img-right locked lazyload" alt="Iceworm Europa Probe">
                         </div>
                     </div>
                 </div>
@@ -593,11 +593,11 @@
 
             <div class="row" id="drone-pics">
                 <div class="col-md-5 col-md-offset-1 text-center">
-                    <img src="img/microdrone-left.jpg" class="img-center" id="left-drone" alt="Europa Underice Micro Drone AUV">
+                    <img data-src="img/microdrone-left.jpg" class="img-center lazyload" id="left-drone" alt="Europa Underice Micro Drone AUV">
                 </div>
 
                 <div class="col-md-5 text-center">
-                    <img src="img/microdrone-right.jpg" class="img-center" id="right-drone" alt="Europa Underice Micro Drone AUV">
+                    <img data-src="img/microdrone-right.jpg" class="img-center lazyload" id="right-drone" alt="Europa Underice Micro Drone AUV">
                 </div>
             </div>
 
@@ -623,7 +623,7 @@
 
             <div class="row">
                 <div class="container text-center">
-                    <img src="img/iceworm-dive.jpg" class="img-center" id="img-worm2" alt="Iceworm Europa Penetrator Cryobot">
+                    <img data-src="img/iceworm-dive.jpg" class="img-center lazyload" id="img-worm2" alt="Iceworm Europa Penetrator Cryobot">
                 </div>
             </div>
 
@@ -640,7 +640,7 @@
             </div>
 
             <div class="widerows" id="bottom-wrap">
-                <img src="img/bottom_smoke.png" id="bottom" class="locked" alt="Europa Ocean Bottom Alien Life">
+                <img data-src="img/bottom_smoke.png" id="bottom" class="locked lazyload" alt="Europa Ocean Bottom Alien Life">
             </div>
     </section>
 
@@ -671,7 +671,7 @@
                         <i>Project Management</i><br>
                         <i>Design &amp; Engineering</i>
                     </div>
-                    <img src="img/R-pasko.png" class="img-center photo locked">
+                    <img data-src="img/R-pasko.png" class="img-center photo locked lazyload">
                 </div>
 
                 <div class="col-md-4 photo-container top-offset-small">
@@ -679,7 +679,7 @@
                     <div class="role-container">
                         <i>Graphics &amp; Web Design</i>
                     </div>
-                    <img src="img/R-tsyplia.png" class="img-center photo locked"> 
+                    <img data-src="img/R-tsyplia.png" class="img-center photo locked lazyload"> 
                 </div>
 
                 <div class="col-md-4 photo-container top-offset-small">
@@ -687,7 +687,7 @@
                     <div class="role-container">
                         <i>Financial Management</i>
                     </div>
-                    <img src="img/R-gould.png" class="img-center photo locked">
+                    <img data-src="img/R-gould.png" class="img-center photo locked lazyload">
                 </div>
             </div>
         </div>
@@ -768,7 +768,7 @@
 
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -779,8 +779,13 @@
 
     <!-- Theme JavaScript -->
     <script src="js/main.js"></script>
+    <script src="js/lazyload.min.js"></script>
 
     <script>
+        var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazyload"
+    });
+
       $.validate({
         lang: 'en'
       });
